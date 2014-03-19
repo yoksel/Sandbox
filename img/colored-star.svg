@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="203px" height="193px" viewBox="0 0 203 193" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>colored-star</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <style>
+    	polygon {
+    		display: none;
+    	} 
+    	:target {
+    		display: block;
+    	}
+    </style>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <polygon id="red" fill="#D0011B" sketch:type="MSShapeGroup" points="101.499998 159.75 38.9008756 192.660314 50.8562412 122.955157 0.212480256 73.5896924 70.2004453 63.4198378 101.500001 1.18238752e-14 132.799576 63.4198534 202.787536 73.5897431 152.143755 122.95517 164.099122 192.660315 "></polygon>
+        <polygon id="violet" fill="#9012FE" sketch:type="MSShapeGroup" points="101.499998 159.75 38.9008756 192.660314 50.8562412 122.955157 0.212480256 73.5896924 70.2004453 63.4198378 101.500001 1.18238752e-14 132.799576 63.4198534 202.787536 73.5897431 152.143755 122.95517 164.099122 192.660315 "></polygon>
+        <polygon id="green" fill="#7ED321" sketch:type="MSShapeGroup" points="101.499998 159.75 38.9008756 192.660314 50.8562412 122.955157 0.212480256 73.5896924 70.2004453 63.4198378 101.500001 1.18238752e-14 132.799576 63.4198534 202.787536 73.5897431 152.143755 122.95517 164.099122 192.660315 "></polygon>
+        <polygon id="yellow" fill="#F8E81C" sketch:type="MSShapeGroup" points="101.499998 159.75 38.9008756 192.660314 50.8562412 122.955157 0.212480256 73.5896924 70.2004453 63.4198378 101.500001 1.18238752e-14 132.799576 63.4198534 202.787536 73.5897431 152.143755 122.95517 164.099122 192.660315 "></polygon>
+    </g>
+</svg>

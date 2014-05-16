@@ -4,57 +4,81 @@
 	<meta charset="utf-8" />
 	<title>Test svg</title>
 	<link rel="stylesheet" href="" />
+  <style>
+      H5 {
+      font-size: 2em;
+      margin-bottom: .5em;
+      }
+
+      .svg {
+        /* display: inline-block; */
+        border: 1px solid silver;
+         width: 199px;
+        height: 200px;
+      }
+
+      .bg {
+        width: 199px;
+        height: 200px;
+        background: url(http://yoksel.github.io/assets/img/svg/sign.svg);
+      }
+
+
+      DIV.svg {
+        border: 5px solid silver;
+        width: 199px;
+        height: 200px;
+      }
+
+
+
+      :root .svg {
+        border: 5px solid orangered;
+        background: none;
+      }
+</style>
 </head>
 <body>
-<table>
-  <tr>
-    <td>Embed:
-      <div class="svg">
-        <embed src="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes" width="199" height="200"/>
-      </div>
-    </td>
-    <td>Object:
-      <div class="svg">
-        <object type="image/svg+xml" data="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes" width="199" height="200">
-          <param name="src" value="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes">
-        </object>
-      </div>
-    </td>
-    <td>Iframe:
-      <div class="svg">
-        <iframe src="http://yoksel.github.io/assets/img/svg/yes-no.svg#yes" width="199px"
- height="200px"></iframe>
-      </div>
-    </td>
-    <td>bg:
-      <div class="svg">
-        <div style="width:200px; height: 200px; background: url(http://yoksel.github.io/assets/img/svg/yes-no.svg#yes);"></div>
-      </div>
-    </td>
-  </tr>
-</table>
-<table>
-  <tr>
-    <td>Embed:
-      <div class="svg">
-        <embed src="http://yoksel.github.io/assets/img/svg/sign.svg" width="199" height="200"/>
-      </div>
-    </td>
-    <td>Object:
-      <div class="svg">
-        <object type="image/svg+xml" data="http://yoksel.github.io/assets/img/svg/sign.svg" width="199" height="200">
-          <param name="src" value="http://yoksel.github.io/assets/img/svg/sign.svg">
-        </object>
-      </div>
-    </td>
-    <td>Iframe:
-      <div class="svg">
-        <iframe src="http://yoksel.github.io/assets/img/svg/sign.svg" width="199px"
- height="200px"></iframe>
-      </div>
-    </td>
-  </tr>
-</table>
-<script src=""></script>
+
+  <h5>Embed/object/iframe</h5>
+
+  <table>
+    <tr>
+      <td>Embed:
+        <div class="svg">
+          <embed src="http://yoksel.github.io/assets/img/svg/sign.svg">
+        </div>
+      </td>
+      <td>Object:
+        <div class="svg">
+          <object type="image/svg+xml" data="http://yoksel.github.io/assets/img/svg/sign.svg">
+            <param name="src" value="http://yoksel.github.io/assets/img/svg/sign.svg">
+          </object>
+        </div>
+      </td>
+      <td>Iframe:
+        <div class="svg">
+          <iframe src="http://yoksel.github.io/assets/img/svg/sign.svg"></iframe>
+        </div>
+      </td>
+    </tr>
+  </table>
+
+  <h5>IMG</h5>
+  <div class="svg">
+    <img src="http://yoksel.github.io/assets/img/svg/sign.svg">
+  </div>
+
+  <h5>Css backgrounds</h5>
+
+  <div class="bg"> .bg </div>
+
+  <h5>Inline SVG</h5>
+
+  <div class="svg">
+    <svg><g fill="#7ED321"><path d="M110 10h-20v76.567l-.605-.605-62.933 62.933 14.142 14.142 49.395-49.395v76.358h20v-76.358l49.395 49.395 14.142-14.142-62.933-62.933-.605.605v-76.567z" /><path d="M99.5 0c-54.965 0-99.5 44.784-99.5 100s44.535 100 99.5 100 99.5-44.784 99.5-100-44.535-100-99.5-100zm0 20c43.894 0 79.5 35.805 79.5 80s-35.606 80-79.5 80-79.5-35.805-79.5-80 35.606-80 79.5-80z" /></g>
+    </svg>
+  </div>
+
 </body>
 </html>

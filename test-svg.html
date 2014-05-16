@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Test svg</title>
+	<link rel="stylesheet" href="" />
+</head>
+<body>
+<table>
+  <tr>
+    <td>Embed:
+      <div class="svg">
+        <embed src="http://yoksel.github.io/assets/img/svg/sign.svg" width="199" height="200"/>
+      </div>
+    </td>
+    <td>Object:
+      <div class="svg">
+        <object type="image/svg+xml" data="http://yoksel.github.io/assets/img/svg/sign.svg" width="199" height="200">
+          <param name="src" value="http://yoksel.github.io/assets/img/svg/sign.svg">
+        </object>
+      </div>
+    </td>
+    <td>Iframe:
+      <div class="svg">
+        <iframe src="http://yoksel.github.io/assets/img/svg/sign.svg" width="199px"
+ height="200px"></iframe>
+      </div>
+    </td>
+  </tr>
+</table>
+<script src=""></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Resizable - Default functionality</title>
+  <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> -->
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <!-- <link rel="stylesheet" href="http://resources/demos/style.css"> -->
+  <style>
+
+.ui-resizable {
+  position: relative;
+  }
+  .ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    display: block;
+    }
+
+  .ui-resizable-s {
+  cursor: s-resize;
+  height: 7px;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  background: crimson;
+  }
+
+  .ui-resizable-e {
+  cursor: e-resize;
+  width: 7px;
+  right: -5px;
+  top: 0;
+  height: 100%;
+  background: yellowgreen;
+  }
+
+  .ui-resizable-se {
+  cursor: se-resize;
+  width: 20px;
+  height: 20px;
+  right: 1px;
+  bottom: 1px;
+  background-color: green;
+  }
+
+.ui-widget-content {
+  border: 1px solid #DDD;  
+  }
+
+.resizable { width: 150px; height: 150px; padding: 0.5em; 
+  }
+  </style>
+  <script>
+  $(function() {
+    $( ".resizable" ).resizable();
+  });
+  </script>
+</head>
+<body>
+ 
+<div class="resizable" class="ui-widget-content">
+  <svg xmlns="http://www.w3.org/2000/svg"viewbox="0 0 365 185">
+  <!--  viewbox="0 0 365 185" -->
+  <g id="car" >
+    <rect x="70" y="10" width="220" height="130" fill="transparent" rx="150" stroke="crimson" stroke-width="10" />
+    
+    <rect x="10" y="70" width="340" height="80" fill="crimson" rx="30" />
+      
+    <g stroke="crimson" stroke-width="10">
+      <line x1="145" y1="10" x2="145" y2="80"/>
+      <line x1="215" y1="10" x2="215" y2="80"/>
+    </g>
+  
+    <g fill="#999">
+      <rect x="0" y="110" width="40" height="20" rx="10" />
+      <rect x="325" y="110" width="40" height="20" rx="10" />
+    </g>  
+  
+    <g>
+      <circle r="40px" fill="#222" stroke="white" stroke-width="7" cx="90" cy="140"/>    
+      <circle r="15px" fill="#555" cx="90" cy="140"/>
+    </g>
+  
+    <g>
+      <circle r="40px" fill="#222" stroke="white" stroke-width="7" cx="270" cy="140"/>
+      <circle r="15px" fill="#555" cx="270" cy="140"/>
+    </g>  
+
+    <g>
+     <circle r="15px" fill="gold" cx="340" cy="90"/>
+     <circle r="10px" fill="orange" cx="15" cy="90"/>
+    </g> 
+  </g> 
+</svg>    
+</div>
+ 
+ 
+</body>
+</html>

@@ -10,6 +10,11 @@
       margin-bottom: .5em;
       }
 
+      H6 {
+      font-size: 1.6em;
+      margin-bottom: .5em;
+      }
+
       .svg {
         /* display: inline-block; */
         border: 1px solid silver;
@@ -23,6 +28,10 @@
         height: 200px;
         background: url(http://yoksel.github.io/assets/img/svg/sign.svg);
         border: 1px solid silver;
+      }
+
+      .bg--datauri-base64 {
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTk5IiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE5OSAyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPjx0aXRsZT5zaWduPC90aXRsZT48ZyBza2V0Y2g6dHlwZT0iTVNQYWdlIiBmaWxsPSIjN0VEMzIxIj48cGF0aCBkPSJNMTEwIDEwaC0yMHY3Ni41NjdsLS42MDUtLjYwNS02Mi45MzMgNjIuOTMzIDE0LjE0MiAxNC4xNDIgNDkuMzk1LTQ5LjM5NXY3Ni4zNThoMjB2LTc2LjM1OGw0OS4zOTUgNDkuMzk1IDE0LjE0Mi0xNC4xNDItNjIuOTMzLTYyLjkzMy0uNjA1LjYwNXYtNzYuNTY3eiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjxwYXRoIGQ9Ik05OS41IDBjLTU0Ljk2NSAwLTk5LjUgNDQuNzg0LTk5LjUgMTAwczQ0LjUzNSAxMDAgOTkuNSAxMDAgOTkuNS00NC43ODQgOTkuNS0xMDAtNDQuNTM1LTEwMC05OS41LTEwMHptMCAyMGM0My44OTQgMCA3OS41IDM1LjgwNSA3OS41IDgwcy0zNS42MDYgODAtNzkuNSA4MC03OS41LTM1LjgwNS03OS41LTgwIDM1LjYwNi04MCA3OS41LTgweiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjwvZz48L3N2Zz4=);
       }
 
 </style>
@@ -60,7 +69,11 @@
 
   <h5>Css backgrounds</h5>
 
-  <div class="bg"></div> <div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div>
+  <div class="bg"></div> <!-- <div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div> -->
+  <h6>Base64</h6>
+   <div class="bg bg--datauri-base64"></div>
+  <h6>Data URI</h6>
+   <div class="bg bg--datauri-svg"></div>
 
   <h5>Inline SVG</h5>
 

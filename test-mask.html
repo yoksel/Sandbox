@@ -1,0 +1,64 @@
+<html>
+  <head></head>
+  <body>
+    <svg width="200" height="300">
+  <lineargradient id="mask-gradient" x1="0" y1="0" x2="112%" y2="0%">
+          <stop stop-color="#fff" offset="0" /><stop stop-color="#fff" offset="10%" />
+          <stop stop-color="#AAA" offset="10%" /><stop stop-color="#AAA" offset="20%" />
+          <stop stop-color="#777" offset="20%" /><stop stop-color="#777" offset="30%" />
+          <stop stop-color="#333" offset="30%" /><stop stop-color="#333" offset="40%" />
+          <stop stop-color="#000" offset="40%" /><stop stop-color="#000" offset="50%" />
+          <stop stop-color="#fff" offset="50%" /><stop stop-color="#fff" offset="60%" />
+          <stop stop-color="#AAA" offset="60%" /><stop stop-color="#AAA" offset="70%" />
+          <stop stop-color="#777" offset="70%" /><stop stop-color="#777" offset="80%" />
+          <stop stop-color="#333" offset="80%" /><stop stop-color="#333" offset="90%" />
+          <stop stop-color="#000" offset="90%" /><stop stop-color="#000" offset="100%" />
+        </lineargradient>
+
+  <mask id="mask" maskunits="objectBoundingBox" maskcontentunits="objectBoundingBox">
+          <rect y="0" width="1" height="1" fill="url(#mask-gradient)" />
+          <circle cx=".5" cy=".5" r=".42" fill="black" />
+          <circle cx="0" cy=".5" r=".32" fill="black" />
+          <circle cx="1" cy=".5" r=".32" fill="black" />
+          <circle cx="0" cy=".5" r=".3" fill="gray" />
+          <circle cx=".5" cy=".5" r=".4" fill="gray" />
+          <circle cx="1" cy=".5" r=".3" fill="gray" />
+          <circle cx="0" cy=".5" r=".25" fill="white" />
+          <circle cx=".5" cy=".5" r=".35" fill="white" />
+          <circle cx="1" cy=".5" r=".25" fill="white" />
+        </mask>
+
+  <mask id="mask" maskunits="userSpaceOnUse" maskcontentunits="objectBoundingBox"
+        width="300" height="200">
+      <circle cx=".50" cy=".50" r=".42" fill="white" />
+  </mask>
+
+  <mask id="mask--usou" maskunits="userSpaceOnUse">
+      <rect y="0" width="100%" height="100%" fill="url(#mask-gradient)" />
+      <circle cx="50%" cy="50%" r="42%" fill="black" />
+      <circle cx="0" cy="50%" r="32%" fill="black" />
+      <circle cx="100%" cy="50%" r="32%" fill="black" />
+      <circle cx="0" cy="50%" r="30%" fill="gray" />
+      <circle cx="50%" cy="50%" r="40%" fill="gray" />
+      <circle cx="100%" cy="50%" r="30%" fill="gray" />
+      <circle cx="0" cy="50%" r="25%" fill="white" />
+      <circle cx="50%" cy="50%" r="35%" fill="white" />
+      <circle cx="100%" cy="50%" r="25%" fill="white" />
+  </mask>
+
+  <symbol id="s-flower-m">
+        <image xlink:href="http://img-fotki.yandex.ru/get/5902/yoksel.5a/0_44a80_e044035f_L.jpg" width="200" height="300"/>
+  </symbol>
+
+  <g mask="url(#mask--usou)">
+          <use xlink:href="#s-flower-m"/>
+        </g>
+</svg>
+
+<svg width="200" height="300">
+        <g mask="url(#mask--usou)">
+          <use xlink:href="#s-flower-m"/>
+        </g>
+      </svg>
+  </body>
+</html>

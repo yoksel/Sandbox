@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Test svg</title>
+	<link rel="stylesheet" href="" />
+  <style>
+      H5 {
+        font-size: 2em;
+        margin-bottom: .5em;
+        }
+
+      H6 {
+        font-size: 1.6em;
+        margin-bottom: .5em;
+        }
+
+      .svg, svg {
+        /* display: inline-block; */
+        border: 1px solid silver;
+        width: 200px;
+        height: 200px;
+        overflow: visible;
+        }
+
+     .bg {
+        width: 200px;
+        height: 200px;
+        /*border: 1px solid silver;*/
+        }
+
+      .bg--url-2 {
+        background: url(./img/sign-size.svg);
+        background-color: yellowgreen;
+        }
+      .bg--url--nosize {
+        background: url(./img/sign-no-size.svg);
+        background-color: yellow;
+        }
+
+      .bg--datauri-base64 {
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTk5IiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDE5OSAyMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6c2tldGNoPSJodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2gvbnMiPjx0aXRsZT5zaWduPC90aXRsZT48ZyBza2V0Y2g6dHlwZT0iTVNQYWdlIiBmaWxsPSIjN0VEMzIxIj48cGF0aCBkPSJNMTEwIDEwaC0yMHY3Ni41NjdsLS42MDUtLjYwNS02Mi45MzMgNjIuOTMzIDE0LjE0MiAxNC4xNDIgNDkuMzk1LTQ5LjM5NXY3Ni4zNThoMjB2LTc2LjM1OGw0OS4zOTUgNDkuMzk1IDE0LjE0Mi0xNC4xNDItNjIuOTMzLTYyLjkzMy0uNjA1LjYwNXYtNzYuNTY3eiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjxwYXRoIGQ9Ik05OS41IDBjLTU0Ljk2NSAwLTk5LjUgNDQuNzg0LTk5LjUgMTAwczQ0LjUzNSAxMDAgOTkuNSAxMDAgOTkuNS00NC43ODQgOTkuNS0xMDAtNDQuNTM1LTEwMC05OS41LTEwMHptMCAyMGM0My44OTQgMCA3OS41IDM1LjgwNSA3OS41IDgwcy0zNS42MDYgODAtNzkuNSA4MC03OS41LTM1LjgwNS03OS41LTgwIDM1LjYwNi04MCA3OS41LTgweiIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCIvPjwvZz48L3N2Zz4=);
+        background-color: skyblue;
+        }
+        .bg--datauri-base64--nosize {
+        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj48dGl0bGU+c2lnbjwvdGl0bGU+PGcgc2tldGNoOnR5cGU9Ik1TUGFnZSIgZmlsbD0iIzdFRDMyMSI+PHBhdGggZD0iTTExMCAxMGgtMjB2NzYuNTY3bC0uNjA1LS42MDUtNjIuOTMzIDYyLjkzMyAxNC4xNDIgMTQuMTQyIDQ5LjM5NS00OS4zOTV2NzYuMzU4aDIwdi03Ni4zNThsNDkuMzk1IDQ5LjM5NSAxNC4xNDItMTQuMTQyLTYyLjkzMy02Mi45MzMtLjYwNS42MDV2LTc2LjU2N3oiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48cGF0aCBkPSJNOTkuNSAwYy01NC45NjUgMC05OS41IDQ0Ljc4NC05OS41IDEwMHM0NC41MzUgMTAwIDk5LjUgMTAwIDk5LjUtNDQuNzg0IDk5LjUtMTAwLTQ0LjUzNS0xMDAtOTkuNS0xMDB6bTAgMjBjNDMuODk0IDAgNzkuNSAzNS44MDUgNzkuNSA4MHMtMzUuNjA2IDgwLTc5LjUgODAtNzkuNS0zNS44MDUtNzkuNS04MCAzNS42MDYtODAgNzkuNS04MHoiIHNrZXRjaDp0eXBlPSJNU1NoYXBlR3JvdXAiLz48L2c+PC9zdmc+);
+        background-color: skyblue;
+        }
+
+      .bg--datauri-svg {
+        background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%237ED321%22%3E%3Cpath%20d%3D%22M110%2010h-20v76.567l-.605-.605-62.933%2062.933%2014.142%2014.142%2049.395-49.395v76.358h20v-76.358l49.395%2049.395%2014.142-14.142-62.933-62.933-.605.605v-76.567z%22%20/%3E%3Cpath%20d%3D%22M99.5%200c-54.965%200-99.5%2044.784-99.5%20100s44.535%20100%2099.5%20100%2099.5-44.784%2099.5-100-44.535-100-99.5-100zm0%2020c43.894%200%2079.5%2035.805%2079.5%2080s-35.606%2080-79.5%2080-79.5-35.805-79.5-80%2035.606-80%2079.5-80z%22/%3E%3C/g%3E%3C/svg%3E);
+          background-color: tomato;
+        }
+
+        .bg--datauri-svg--nosize {
+        background: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Asketch%3D%22http%3A//www.bohemiancoding.com/sketch/ns%22%3E%3Ctitle%3Esign%3C/title%3E%3Cg%20sketch%3Atype%3D%22MSPage%22%20fill%3D%22%237ED321%22%3E%3Cpath%20d%3D%22M110%2010h-20v76.567l-.605-.605-62.933%2062.933%2014.142%2014.142%2049.395-49.395v76.358h20v-76.358l49.395%2049.395%2014.142-14.142-62.933-62.933-.605.605v-76.567z%22%20sketch%3Atype%3D%22MSShapeGroup%22/%3E%3Cpath%20d%3D%22M99.5%200c-54.965%200-99.5%2044.784-99.5%20100s44.535%20100%2099.5%20100%2099.5-44.784%2099.5-100-44.535-100-99.5-100zm0%2020c43.894%200%2079.5%2035.805%2079.5%2080s-35.606%2080-79.5%2080-79.5-35.805-79.5-80%2035.606-80%2079.5-80z%22%20sketch%3Atype%3D%22MSShapeGroup%22/%3E%3C/g%3E%3C/svg%3E);
+          background-color: tomato;
+        }
+          /*
+          data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M29.193%205.265c-3.629-3.596-9.432-3.671-13.191-.288-3.76-3.383-9.561-3.308-13.192.288-3.741%203.704-3.741%209.709%200%2013.415%201.069%201.059%2011.053%2010.941%2011.053%2010.941%201.183%201.172%203.096%201.172%204.278%200%200%200%2010.932-10.822%2011.053-10.941%203.742-3.706%203.742-9.711-.001-13.415zm-1.425%2012.003l-11.053%2010.941c-.393.391-1.034.391-1.425%200l-11.053-10.941c-2.95-2.92-2.95-7.671%200-10.591%202.844-2.815%207.416-2.914%2010.409-.222l1.356%201.22%201.355-1.22c2.994-2.692%207.566-2.594%2010.41.222%202.95%202.919%202.95%207.67.001%2010.591zm-18.515-9.767c.277%200%20.5.224.5.5s-.224.5-.5.5h-.001c-1.794%200-3.249%201.455-3.249%203.249v.001c0%20.276-.224.5-.5.5s-.5-.224-.5-.5c0-2.346%201.901-4.247%204.246-4.249l.004-.001z%22/%3E%3C/svg%3E
+          */
+
+</style>
+</head>
+<body>
+
+  <h5>Embed/object/iframe</h5>
+
+  <table>
+    <tr>
+      <td><h6>Embed:</h6>
+          <embed class="svg" src="./img/sign.svg">
+      </td>
+      <td><h6>Object:</h6>
+          <object type="image/svg+xml" data="./img/sign.svg" class="svg">
+            <param name="src" value="./img/sign.svg">
+          </object>
+      </td>
+      <td><h6>Iframe:</h6>
+          <iframe class="svg" src="./img/sign.svg"></iframe>
+      </td>
+    </tr>
+  </table>
+
+  <h5>IMG</h5>
+    <img src="./img/sign.svg" class="svg">
+
+  <h5>Css backgrounds</h5>
+
+  <table>
+    <tr>
+      <td><h6>Bg:</h6>
+          <div class="bg bg--url-2"></div>
+      </td>
+      <td><h6>Base64</h6>
+          <div class="bg bg--datauri-base64"></div>
+      </td>
+      <td> <h6>SVG in data URI</h6>
+          <div class="bg bg--datauri-svg"></div>
+      </td>
+    </tr>
+  </table>
+
+  <h5>Css backgrounds (SVG without sizes)</h5>
+
+  <table>
+    <tr>
+      <td><h6>Bg:</h6>
+          <div class="bg bg--url--nosize"></div>
+      </td>
+      <td><h6>Base64</h6>
+          <div class="bg bg--datauri-base64--nosize"></div>
+      </td>
+      <td> <h6>SVG in data URI</h6>
+          <div class="bg bg--datauri-svg--nosize"></div>
+      </td>
+    </tr>
+  </table>
+
+<h5>Try with or without sizes</h5>
+  <table>
+    <tr>
+      <td><h6>No Sizes</h6>
+        <div class="bg"
+        style="background: crimson url(./img/fst-load/no-sizes.svg)"></div>
+      </td>
+      <td><h6>Viewbox</h6>
+        <div class="bg"
+        style="background: orange url(./img/fst-load/viewbox.svg)"></div>
+      </td>
+      <td><h6>Width Height</h6>
+        <div class="bg"
+        style="background: gold url(./img/fst-load/wh.svg)"></div>
+      </td>
+      <td><h6>All Sizes</h6>
+        <div class="bg"
+          style="background: yellowgreen url(./img/fst-load/all-sizes.svg)"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><h6>All Sizes: attr order</h6>
+        <div class="bg"
+          style="background: skyblue url(./img/fst-load/attr-order.svg)"></div>
+      </td>
+      <td><h6>All Sizes: vbox first</h6>
+        <div class="bg"
+          style="background: violet url(./img/fst-load/viewbox-first.svg)"></div>
+      </td>
+      <td><h6>All Sizes: after xmlns</h6>
+        <div class="bg"
+          style="background: darkviolet url(./img/fst-load/sizes-after-xmlns.svg)"></div>
+      </td>
+      <td><h6>All Sizes: vwh last attrs</h6>
+        <div class="bg"
+          style="background: hotpink url(./img/fst-load/sizes-last-attr.svg)"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h6>No xlink</h6>
+        <div class="bg"
+          style="background: hotpink url(./img/fst-load/sizes-last-attr2.svg)"></div>
+        </td>
+        <td>
+          <h6>Copy of all sizes example</h6>
+          <div class="bg"
+          style="background: hotpink url(./img/fst-load/sizes-last-attr4.svg)"></div>
+        </td>
+        <td>
+          <h6>WH</h6>
+          <div class="bg"
+          style="background: hotpink url(./img/fst-load/sizes-last-attr5.svg)"></div>
+      </td>
+    </tr>
+  </table>
+
+  <h5>Star from sketch</h5>
+
+  <table>
+    <tr>
+      <td><h6>Bg right from sketch</h6>
+          <div class="bg"
+          style="background: hotpink url(./img/fst-load/star.svg)"></div>
+      </td>
+      <td><h6>Bg right more clear</h6>
+          <div class="bg"
+          style="background: yellowgreen url(./img/fst-load/star-hclear.svg)"></div>
+      </td>
+      <td><h6>Bg attrs last</h6>
+          <div class="bg"
+          style="background: gold url(./img/fst-load/star-attr-last.svg)"></div>
+      </td>
+      <td><h6>Bg attrs last clear</h6>
+          <div class="bg"
+          style="background: orange url(./img/fst-load/star-attr-last-clear.svg)"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><h6>Bg attrs no xlink</h6>
+          <div class="bg"
+          style="background: teal url(./img/fst-load/star-attr-last-noxlink.svg)"></div>
+      </td>
+
+      <td><h6>Bg attrs move version</h6>
+          <div class="bg"
+          style="background: pink url(./img/fst-load/star-moveversion.svg)"></div>
+      </td>
+
+      <td><h6>Bg attrs no version</h6>
+          <div class="bg"
+          style="background: darkviolet url(./img/fst-load/star-noversion.svg)"></div>
+      </td>
+
+      <td><h6>Bg attrs viewbox before wh</h6>
+          <div class="bg"
+          style="background: crimson url(./img/fst-load/star-vb-wh.svg)"></div>
+      </td>
+    </tr>
+    <tr>
+      <td><h6>Bg attrs no sizes</h6>
+          <div class="bg"
+          style="background: gold url(./img/fst-load/star-nosizes.svg)"></div>
+      </td>
+      <td><h6>Bg attrs vewbox only</h6>
+          <div class="bg"
+          style="background: yellowgreen url(./img/fst-load/star-vb-only.svg)"></div>
+      </td>
+
+      <td><h6>Bg attrs vewbox 200x200</h6>
+          <div class="bg"
+          style="background: magenta url(./img/fst-load/star-vb-200-200.svg)"></div>
+      </td>
+
+      <td><h6>Bg attrs wh 200x200</h6>
+          <div class="bg"
+          style="background: darkorchid url(./img/fst-load/star-wh-200.svg)"></div>
+      </td>
+
+    </tr>
+    <tr>
+
+      <td><h6>Bg attrs wh 150x150</h6>
+          <div class="bg"
+          style="background: plum url(./img/fst-load/star-wh-150.svg)"></div>
+      </td>
+
+    </tr>
+  </table>
+
+<!-- <div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div><div class="bg"></div> -->
+
+
+
+  <h5>Inline SVG</h5>
+
+  <div class="svg">
+    <svg><g fill="#7ED321"><path d="M110 10h-20v76.567l-.605-.605-62.933 62.933 14.142 14.142 49.395-49.395v76.358h20v-76.358l49.395 49.395 14.142-14.142-62.933-62.933-.605.605v-76.567z" /><path d="M99.5 0c-54.965 0-99.5 44.784-99.5 100s44.535 100 99.5 100 99.5-44.784 99.5-100-44.535-100-99.5-100zm0 20c43.894 0 79.5 35.805 79.5 80s-35.606 80-79.5 80-79.5-35.805-79.5-80 35.606-80 79.5-80z" /></g>
+    </svg>
+  </div>
+
+  <h6>SVG without sizes</h6>
+  <div class="svg">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"><title>sign</title><g sketch:type="MSPage" fill="#7ED321"><path d="M110 10h-20v76.567l-.605-.605-62.933 62.933 14.142 14.142 49.395-49.395v76.358h20v-76.358l49.395 49.395 14.142-14.142-62.933-62.933-.605.605v-76.567z" sketch:type="MSShapeGroup"/><path d="M99.5 0c-54.965 0-99.5 44.784-99.5 100s44.535 100 99.5 100 99.5-44.784 99.5-100-44.535-100-99.5-100zm0 20c43.894 0 79.5 35.805 79.5 80s-35.606 80-79.5 80-79.5-35.805-79.5-80 35.606-80 79.5-80z" sketch:type="MSShapeGroup"/></g></svg>
+  </div>
+
+</body>
+</html>

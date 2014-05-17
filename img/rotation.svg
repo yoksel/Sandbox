@@ -1,0 +1,13 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 287 287'>
+        <g transform='translate(-102.5-224.86)' fill='none' stroke='rgb(52,52,52)'>
+            <path d='m387 368.36218a141 141 0 1 1 -282 0 141 141 0 1 1 282 0z' stroke-width='10' />
+            <g stroke-width='40'>
+                <path d='m368 368.36218a122 122 0 1 1 -244 0 122 122 0 1 1'>
+                    <animateTransform attributeName='transform' type='rotate' from='0 246 368.36' to='360 246 368.36' dur='3s' repeatCount='indefinite' begin='1s' />
+                </path>
+                <path d='m332.26703 368.36218a86.26703 86.26703 0 1 1 -172.53406 0 86.26703 86.26703 0 1 1'>
+                    <animateTransform attributeName='transform' type='rotate' from='0 246 368.36' to='-360 246 368.36' dur='5s' repeatCount='indefinite' begin='1s' />
+                </path>
+            </g>
+        </g>
+    </svg>

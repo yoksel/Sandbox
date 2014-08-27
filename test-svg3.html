@@ -3,24 +3,25 @@
 <head>
     <title>Test SVG embeding</title>
     <style>
-        svg {
+        .svg {
+            display: block;
+            width: 100px;
+            height: 100px;
             border: 2px solid red;
             background: yellow;
             }
+        svg {
+            border-color: blue !important;
+        }
     </style>
 </head>
 <body>
 
-
-    <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" style="display: block;">
+    <svg class="svg" xmlns="http://www.w3.org/2000/svg">
         <circle r="30" cx="30" cy="30" fill="hotpink"></circle>
     </svg>
 
-    <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" style="display: inline-block;">
-        <circle r="30" cx="30" cy="30" fill="hotpink"></circle>
-    </svg>
-
-    <svg width="100px" height="100px" xmlns="http://www.w3.org/2000/svg" style="display: inline-block;" viewBox="0 0 100 100">
+    <svg xmlns="http://www.w3.org/2000/svg"  class="svg" viewBox="0 0 100 100">
         <circle r="30" cx="30" cy="30" fill="hotpink"></circle>
     </svg>
 

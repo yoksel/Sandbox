@@ -1,0 +1,500 @@
+/* ---------------------------------------------------------------------------------
+   file-start: widgets/login.css 
+*/
+
+/* Login form 
+---------------------------------------------------------------------- */
+.b-loginform {
+    display: block;
+    clear: both;
+    width: 27em; /* width: 430px; */
+    border: 1px solid #D9E3E6;
+    background: #FFF;
+    }
+
+/* Modification for USView 
+---------------------------------------------------------------------- */
+
+
+body:nth-of-type(1) .s-loginform {
+    left: 50%;
+    top: 50%;
+    margin: -16em 0 0 -13.5em;
+    }
+
+ .s-loginform {
+    display: none;
+    z-index: 5001;
+    top: -webkit-calc(50% - 16em); /* height:32px */
+    top: calc(50% - 16em);
+    left: -webkit-calc(50% - 13.5em);
+    left: calc(50% - 13.5em);
+    width: 27em;
+    margin: 0;
+    border: 0;       
+    }
+
+.lt-ie10 .s-loginform {
+    top: 50%;
+    left: 50%;
+    margin: -16em 0 0 -13.5em;
+    }
+
+.p-loginform .s-loginform {
+    display: block;
+    position: fixed;
+    }
+@media (max-width: 650px) {
+    .s-loginform {
+        /*
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: calc(100% - 60px);
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+        */
+        top: 30px;
+        left: 50%;
+        margin-left: -13.5em;
+        }
+    .logged-out .b-fader-login {
+        /*display: none;*/
+        }
+    .p-loginform .s-loginform {
+        position: absolute;
+        }
+} 
+/* End of Modification for USView 
+---------------------------------------------------------------------- */    
+
+/* Login form header */
+
+.b-loginform-header {
+    position: relative;
+    padding: 15px 45px 12px 30px;
+    background: #0099cc;
+    }
+    .b-loginform H2 {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 1.389em;
+        font-weight: normal;
+        color: #FFF;
+        }
+@media (max-width: 650px) {
+    .s-loginform .b-loginform-header {
+        min-height: 60px;
+        padding: 0 1em;
+        line-height: 60px;
+        }
+    .s-loginform H2 {
+        font-size: 1.2em;
+        }
+}
+
+.b-loginform .i-iconus {
+    background-image: url(/img/schemius/s-icons.svg);
+    background-repeat: no-repeat;
+    background-position: -62px 6px;
+    }
+.b-loginform-close {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+    }
+    .s-loginform .b-loginform-close {
+        display: block;
+        }
+
+@media (max-width: 650px) {
+    .s-loginform .b-loginform-close {
+        display: none;
+        }
+} 
+
+/* Login form body */
+
+.b-loginform-body {
+    padding: 30px;
+   /* font-size: 0.813em; */
+    }
+@media (max-width: 650px) {
+    .b-loginform-body {
+        padding: 1em;
+        }
+}
+/* Login form 2 cols */
+
+.b-loginform-col1 {
+    display: inline-block;
+    float: left;
+    width: 34%;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+    }
+    .b-loginform-col1:before {
+        display: inline-block;
+        width: 1px;
+        margin: 0 -3px;
+        content: "";
+        vertical-align: middle;
+        }
+.b-loginform-col2 {
+    margin-left: 32%;
+    text-align: right;
+    }
+
+/* Login form external block */
+
+.b-loginform-external {
+    border-bottom: 1px solid #DAE3E6;
+    }
+    .b-loginform-external:after {
+        display: table;
+        content: " ";
+        clear: both;
+        border-collapse: collapse;
+        }
+.b-loginform-external .b-loginform-col1 {
+    width: 100%;
+    }
+.b-loginform-social,
+.b-loginform-droplist {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+    .b-loginform-social {
+        display: inline-block;
+        height: 30px;
+        margin: .5em 0;
+        vertical-align: top;
+        white-space: nowrap;
+        }
+    .b-loginform-social-item {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        vertical-align: middle;
+        cursor: pointer;
+        border-radius: 2px;
+        }
+        .b-loginform-social-link {
+            position: relative;
+            display: block;
+            width: 30px;
+            height: 30px;
+            border: 0;
+            background-color: #005673;
+            font: 0/0 a;
+            text-shadow: none;
+            color: transparent;
+            }
+        .b-loginform-social-link:after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 16px;
+            margin: -8px 0 0 -8px;
+            background-image: url(/img/icons/flatsocial_16_white.png?v=1);
+            background-image: url(/img/icons/flatsocial_16_white.svg?v=1), none;
+            background-repeat: no-repeat;
+            font: 0/0 a;
+            cursor: pointer;
+            }
+        /* opera-mini svg hack */
+        doesnotexist:-o-prefocus,
+        .b-loginform-social-link:after {
+            background-image: url(/img/icons/flatsocial_16_white.png?v=1);
+            }
+        /* google+ */
+        .b-loginform-social-google .b-loginform-social-link:after {
+            background-position: -1px -19px;
+            }
+        .b-loginform-social-google .b-loginform-social-link:hover {
+            background-color: #DD4B39;
+            }
+        /* mail.ru */
+        .b-loginform-social-mail .b-loginform-social-link:after {
+            background-position: -1px -55px;
+            }
+        .b-loginform-social-mail .b-loginform-social-link:hover {
+            background-color: #0857a6;
+            }
+        /* vk */
+        .b-loginform-social-vk .b-loginform-social-link:after {
+            background-position: -1px -109px;
+            }
+        .b-loginform-social-vk .b-loginform-social-link:hover {
+            background-color: #45668E;
+            }
+        /* openid */
+        .b-loginform-social-openid .b-loginform-social-link:after {
+            background-position: -1px -73px;
+            }
+        .b-loginform-social-openid .b-loginform-social-link:hover {
+            background-color: #F78C40;
+            }
+        /* facebook */
+        .b-loginform-social-fb .b-loginform-social-link:after {
+            background-position: -1px -1px;
+            }
+        .b-loginform-social-fb .b-loginform-social-link:hover {
+            background-color: #3B5998;
+            }
+        /* twitter */
+        .b-loginform-social-tw .b-loginform-social-link:after {
+            background-position: -1px -91px;
+            }
+        .b-loginform-social-tw .b-loginform-social-link:hover {
+            background-color: #00ACEE;
+            }
+        /* instagram */
+        .b-loginform-social-instagram .b-loginform-social-link:after {
+            background-position: -1px -37px;
+            }
+        .b-loginform-social-instagram .b-loginform-social-link:hover {
+            background-color: #517FA4;
+            }
+
+
+
+/*    .b-loginform-drop {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+        border: 1px solid #DAE3E6;
+        border-radius: 2px;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+        background-color: #FFF;
+        }
+        .b-loginform-drop:after {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 6px;
+            margin-top: -3px;
+            margin-left: -5px;
+            content: "";
+            background: url(/img/schemius/s-nav-arrow.png?v=38067) no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+            -webkit-transform: rotateX(180deg);
+            -moz-transform: rotateX(180deg);
+            -ms-transform: rotateX(180deg);
+            -o-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+            } */
+
+/*    .b-loginform-droplist {
+        clear: both;
+        opacity: 0;
+        height: 0;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+        }
+
+.b-loginform-external-open .b-loginform-droplist {
+        height: 30px;
+        opacity: 1;
+        -webkit-transition: opacity .15s ease-in-out;
+        -moz-transition: opacity .15s ease-in-out;
+        -ms-transition: opacity .15s ease-in-out;
+        -o-transition: opacity .15s ease-in-out;
+        transition: opacity .15s ease-in-out;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+        }
+.b-loginform-external-open .b-loginform-drop:after {
+    -webkit-transform: rotateX(0deg);
+       -moz-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
+         -o-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    }
+*/
+
+/* loginform fields */
+
+.b-loginform-field {
+    margin: 0 0 20px;
+    }
+.b-loginform-row {
+    margin: 0.2em 0 0;
+    }
+    .b-loginform-row:after,
+    .b-loginform-field:after {
+        display: table;
+        content: " ";
+        clear: both;
+        border-collapse: collapse;
+        }
+
+/* Login form parts */
+
+.b-loginform-link {
+    vertical-align: middle;
+    text-decoration: none !important;
+    white-space: nowrap;
+    color: #26A1D0 !important;
+    }
+.b-loginform-remember {
+    text-transform: lowercase;
+    }
+.b-loginform-create {
+    text-align: right;
+    margin: 10px 0 0;
+    }
+.b-loginform-create .b-loginform-link {
+    text-transform: uppercase;
+    }
+
+/* errors */
+
+.b-loginform-error {
+    display: none;
+    float: right;
+    color: #D92B2B;
+    }
+.b-loginform-field-error .b-loginform-error {
+    display: inline;
+    }
+
+/* Login form elements */
+
+.b-ljform-label {
+    display: inline-block;
+    line-height: 16px;
+    vertical-align: middle;
+    padding: 0 10px 0 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #7A9199;
+    }
+
+
+.b-loginform-external-label {
+    display: block;
+    padding: 4px 10px 0 0;
+    } 
+.b-loginform .b-input {
+    width: 100%;
+    }
+  
+.b-ljform-input-user {
+    background: #F7F9FA url(/img/userinfo.gif?v=37824) no-repeat 1px 50%;
+    }
+.b-ljform-checkbox {
+    margin: 0;
+    }
+.b-flatbutton:focus {
+    background-color: #00ACE6;
+    }
+
+/* ie */
+
+.ie8 .b-loginform-social-link {
+    background-image: url(/img/social-icons/social-icons.png?v=40947);
+    }
+
+/* ---------- */
+
+@media (max-width: 480px) {
+
+    .b-loginform-col1,
+    .b-loginform-col2,
+    .b-loginform-external .b-loginform-col1,
+    .b-loginform-external .b-loginform-col2 {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+        }  
+    .b-loginform-external-label {
+        display: block;
+        }    
+    .b-loginform-social, 
+    .b-loginform-droplist {
+        float: none;
+        display: inline-block;
+        vertical-align: top;
+        opacity: 1;
+        height: auto;
+        }
+        /* .b-loginform-social-item {
+            margin: 0 10px 10px 0;
+            } */
+    .b-loginform-error {
+        float: none;
+        }
+    .b-loginform-field-password {
+        margin: 0;
+        }
+    .b-loginform-create,
+    .b-loginform-submit {
+        text-align: center;
+        }
+    .b-loginform-remember {
+        display: inline-block;
+        margin: 0.5em 0 1em;
+        }
+    } 
+
+/* this is css for the login widget 
+
+.appwidget-login {
+    margin: 15px;
+}
+.appwidget-login fieldset.nostyle {
+    margin-bottom: 0.5em !important;
+}
+.appwidget-login label.left {
+    width: 6.25em;
+    line-height: 22px;
+}
+.appwidget-login input.text {
+    width: 160px;
+}
+.appwidget-login fieldset.nostyle,
+.appwidget-login p {
+    margin: 0 0 0.5em 0;
+}
+.appwidget-login p {
+    margin-left: 6.25em;
+}
+.appwidget-login a.small-link {
+    font-size: 85%;
+    color: #777;
+}
+input.create-account {
+    font-size: 110%;
+    color: #fff;
+    margin: 0;
+    background: #559A40;
+    border: 2px solid #76AE65;
+    border-bottom: 2px solid #447C33;
+    border-right: 2px solid #447C33;
+    }*/
+
+
+    
+
+
+/* file-end: widgets/login.css 
+----------------------------------------------------------------------------------*/

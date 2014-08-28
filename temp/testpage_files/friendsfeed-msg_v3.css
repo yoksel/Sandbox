@@ -1,0 +1,44 @@
+/* ---------------------------------------------------------------------------------
+   file-start: friendsfeed-msg_v3.css 
+*/
+
+.b-lenta-msg {
+	position: relative;
+    display: block;
+    margin: 0;
+    padding: 10px 50px 10px 50px;
+    -moz-box-sizing: border-box;
+    	 box-sizing: border-box;
+    background: #00B0EA;
+    text-align: center;
+    font-size: 1em;
+    color: #FFFFFF;
+    }
+	.b-lenta-msg A:link,
+	.b-lenta-msg A:visited,
+	.b-lenta-msg A:hover,
+	.b-lenta-msg A:active {
+		border: 0 !important;
+	    text-decoration: underline;
+	    font-size: 1em;
+	    color: #FFFFFF !important;
+	    }  
+	.b-lenta-msg-close {
+		position: absolute;
+		top: 50%;
+		right: 8px;
+		display: block;
+		height: 34px;
+		width: 34px;
+		margin-top: -17px;
+		cursor: pointer;
+		background-image: url("../img/schemius/s-icons.svg");
+		background-repeat: no-repeat;
+		background-position: -61px 7px;
+		font-size: 0;
+		}
+
+
+
+/* file-end: friendsfeed-msg_v3.css 
+----------------------------------------------------------------------------------*/

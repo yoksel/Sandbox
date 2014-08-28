@@ -1,0 +1,391 @@
+/* ---------------------------------------------------------------------------------
+   file-start: discoverytimes.css 
+*/
+
+/* Discovery: LJTimes */
+
+
+
+/* NORMALIZE */
+HTML {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    }
+BODY {
+    margin: 0;
+    }
+ARTICLE,
+ASIDE,
+DETAILS,
+FIGCAPTION,
+FIGURE,
+FOOTER,
+HEADER,
+HGROUP,
+MAIN,
+NAV,
+SECTION,
+SUMMARY {
+    display: block;
+    }
+AUDIO,
+CANVAS,
+PROGRESS,
+VIDEO {
+    display: inline-block;
+    vertical-align: baseline;
+    }
+A {
+    background: transparent;
+    }
+B,
+STRONG {
+    font-weight: bold;
+    }
+IMG {
+    border: 0;
+    }
+
+
+
+/* LINKS */
+A:link,
+A:visited {
+    border: 0;
+    text-decoration: none;
+    color: #242F33 !important;
+    }
+A:hover,
+A:active {
+    border: 0;
+    text-decoration: none;
+    color: #008FBF !important;
+    }
+
+
+
+/* LJUSER */
+HTML BODY .i-ljuser {
+    text-transform: uppercase;
+    }
+    /* remove font weight */
+    HTML BODY .i-ljuser-username B {
+        font-weight: normal;
+        }
+    /* userheads redesign (users and communities only) */
+    HTML BODY .i-ljuser-type-P .i-ljuser-profile,
+    HTML BODY .i-ljuser-type-C .i-ljuser-profile {
+        display: inline-block;
+        width: 16px !important;
+        height: 16px !important;
+        margin: 0 0.3em 0 0 !important;
+        background: url(/img/userinfo_v3.png?v=39106) no-repeat 0 0;
+        }
+        HTML BODY .i-ljuser-type-P .i-ljuser-userhead,
+        HTML BODY .i-ljuser-type-C .i-ljuser-userhead {
+            visibility: hidden;
+            }
+    /* user */
+    HTML BODY .i-ljuser-type-P .i-ljuser-profile {
+        background: url(/img/userinfo_v3.png?v=39106) no-repeat 0 0;
+        }
+    /* community */
+    HTML BODY .i-ljuser-type-C .i-ljuser-profile {
+        background: url(/img/community_v3.png?v=38539) no-repeat 0 0;
+        }
+
+
+
+/* IFRAME FIX */
+DIV[style="visibility:hidden; position:absolute;"] {
+    top: 0;
+    right: 0;
+    }
+
+
+
+/* MAIN */
+.b-discoverytimes {
+    overflow: hidden;
+    height: 49px;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #DAE3E6;
+    font: 18px/1.1 'ProximaNovaRegular',Tahoma,Arial,sans-serif;
+    }
+.b-discoverytimes:after {
+    content: "";
+    display: table;
+    border-collapse: collapse;
+    clear: both;
+    }
+    /* head */
+    .b-discoverytimes-head {
+        position: relative;
+        display: inline-block;
+        height: 50px;
+        margin: 0;
+        padding: 0 30px 0 20px;
+        vertical-align: top;
+        line-height: 50px;
+        text-transform: uppercase;
+        font-size: 21px;
+        font-weight: normal;
+        color: #39BF71;
+        }
+        .b-discoverytimes-head:before {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 0;
+            margin: -60px 0 0;
+            padding: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 25px solid #DAE3E6;
+            }
+        .b-discoverytimes-head:after {
+            content: " ";
+            position: absolute;
+            top: 50%;
+            right: 1px;
+            width: 0;
+            margin: -60px 0 0;
+            padding: 0;
+            border-top: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 25px solid #FFF;
+            }
+        .b-discoverytimes-head A:link,
+        .b-discoverytimes-head A:visited,
+        .b-discoverytimes-head A:hover,
+        .b-discoverytimes-head A:active {
+            border: 0;
+            text-decoration: none;
+            color: #39BF71 !important;
+            }
+    /* items */
+    .b-discoverytimes-container {
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        height: 50px;
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        }
+        .b-discoverytimes-items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            }
+            /* item */
+            .b-discoverytimes-item {
+                display: none;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                overflow: hidden;
+                width: 100%;
+                height: 50px;
+                margin: 0;
+                padding: 0;
+                -webkit-backface-visibility: hidden;
+                -webkit-transition: opacity 0.5s ease-in;
+                -moz-transition: opacity 0.5s ease-in;
+                -ms-transition: opacity 0.5s ease-in;
+                -o-transition: opacity 0.5s ease-in;
+                transition: opacity 0.5s ease-in;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                line-height: 49px;
+                background: #FFF;
+                }
+            .b-discoverytimes-item:after {
+                content: "";
+                display: table;
+                border-collapse: collapse;
+                clear: both;
+                }
+                .b-discoverytimes-item-head {
+                    position: relative;
+                    display: inline;
+                    margin: 0;
+                    padding: 0 0 0 20px;
+                    text-transform: uppercase;
+                    font: 13px/1.1 "ProximaNovaSemibold",Tahoma,Arial,sans-serif;
+                    }
+                    .b-discoverytimes-item-head A:link,
+                    .b-discoverytimes-item-head A:visited {
+                        border: 0;
+                        text-decoration: none;
+                        color: #008FBF !important;
+                        }
+                    .b-discoverytimes-item-head A:hover,
+                    .b-discoverytimes-item-head A:active {
+                        border: 0;
+                        text-decoration: none;
+                        color: #242F33 !important;
+                        }
+                    .b-discoverytimes-item-head B {
+                        font-weight: normal;
+                        }
+                .b-discoverytimes-item-body {
+                    display: inline;
+                    margin: 0;
+                    padding: 0 0 0 20px;
+                    font-weight: normal;
+                    font-size: 1em;
+                    }
+            /* active item */
+            .b-discoverytimes-item-active {
+                display: block;
+                opacity: 1;
+                }
+    /* aside */
+    .b-discoverytimes-aside {
+        float: right;
+        height: 50px;
+        margin: 0;
+        padding: 0 20px;
+        line-height: 49px;
+        }
+        .b-discoverytimes-aside-recommend,
+        .b-discoverytimes-aside-recommended,
+        .b-discoverytimes-aside-random {
+            display: none;
+            }
+
+    /* banner */
+    .b-discoverytimes-banner {
+        /* display: none; LJSUP-18278 */
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 49px;
+        border-top: 1px solid #DAE3E6;
+        }
+
+/* with branding */
+.b-discoverytimes-state-branding {
+    margin-right: 300px;
+    border-right: 1px solid #DAE3E6;
+    }
+    .b-discoverytimes-state-branding .b-discoverytimes-container {
+        width: 45%;
+        }
+    .b-discoverytimes-state-branding .b-discoverytimes-banner {
+        display: block;
+        }
+
+/* with recommend link */
+.b-discoverytimes-state-recommend {
+    }
+    .b-discoverytimes-state-recommend .b-discoverytimes-aside-recommend {
+        display: inline;
+        }
+
+/* with disabled recommend link */
+.b-discoverytimes-state-recommended {
+    }
+    .b-discoverytimes-state-recommended .b-discoverytimes-aside-recommend {
+        display: none;
+        }
+    .b-discoverytimes-state-recommended .b-discoverytimes-aside-recommended {
+        display: inline;
+        opacity: 0.5;
+        pointer-events: none;
+        }
+
+/* with random link */
+.b-discoverytimes-state-random {
+    }
+    .b-discoverytimes-state-random .b-discoverytimes-aside-random {
+        display: inline;
+        }
+
+
+
+
+
+
+@media only screen and (max-width: 1555px) {
+
+    .b-discoverytimes-container {
+        width: 55%;
+        }
+    .b-discoverytimes-state-branding .b-discoverytimes-container {
+        width: 40%;
+        }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .b-discoverytimes-container {
+        width: 50%;
+        }
+    .b-discoverytimes-state-branding .b-discoverytimes-container {
+        width: 35%;
+        }
+
+}
+
+@media only screen and (max-width: 1140px) {
+
+    .b-discoverytimes-container {
+        width: 45%;
+        }
+    .b-discoverytimes-state-branding .b-discoverytimes-container {
+        width: 30%;
+        }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .b-discoverytimes-container {
+        width: 65%;
+        }
+    .b-discoverytimes-state-branding .b-discoverytimes-container {
+        width: 65%;
+        }
+    .b-discoverytimes-aside {
+        display: none;
+        }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .b-discoverytimes-container {
+        width: 50%;
+        }
+    .b-discoverytimes-state-branding .b-discoverytimes-container {
+        width: 50%;
+        }
+
+}
+
+/* xxs-size screen (480px) */
+@media all and (max-width: 480px) {
+    .b-discoverytimes-state-branding {
+        margin-right: 0;
+        border-right: 0;
+        }
+    .b-discoverytimes-state-branding .b-discoverytimes-banner {
+        display: none;
+        }
+}
+
+
+
+
+/* file-end: discoverytimes.css 
+----------------------------------------------------------------------------------*/

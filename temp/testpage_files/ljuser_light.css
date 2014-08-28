@@ -1,0 +1,36 @@
+/* ---------------------------------------------------------------------------------
+   file-start: ljuser/ljuser_light.css 
+*/
+
+/* LJUSER light */
+
+/* root */
+HTML BODY .i-ljuser {
+    text-transform: none;
+    font-family: "ProximaNovaSemibold",sans-serif;
+    font-size: 14px;
+    font-size: 0.875rem;
+    }
+
+    /* userhead */
+    HTML BODY .i-ljuser .i-ljuser-profile {
+        display: inline-block;
+        width: 16px !important;
+        height: 16px !important;
+        margin: 0 2px 0 0 !important;
+        }
+
+    /* username */
+    HTML BODY .i-ljuser-username {
+        }
+
+        /* remove font weight */
+        HTML BODY .i-ljuser-username B {
+            font-weight: normal;
+            }
+
+
+
+
+/* file-end: ljuser/ljuser_light.css 
+----------------------------------------------------------------------------------*/

@@ -1,0 +1,19 @@
+/* ---------------------------------------------------------------------------------
+   file-start: lenta/lenta_v3/lenta-customize.css 
+*/
+
+
+.b-lenta-widget-customize {
+	top: 60px;
+	}
+
+.b-lenta-widget-customize .b-lenta-widget-button:before  {
+	width: 27px;
+	height: 27px;
+	margin: -13px 0 0 -13px;
+	background: url(/img/icons/unit_v3.png?v=40336) no-repeat 0 -68px;
+	}
+
+
+/* file-end: lenta/lenta_v3/lenta-customize.css 
+----------------------------------------------------------------------------------*/

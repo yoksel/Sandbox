@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0106)http://www.ljdev5.livejournal.ru/discovery/times?origin=http://yokcel.ljdev5.livejournal.ru&journalid=6024 -->
+<html id="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide{display:none !important;}ng\:form{display:block;}.ng-animate-block-transitions{transition:0s all!important;-webkit-transition:0s all!important;}.ng-hide-add-active,.ng-hide-remove{display:block!important;}</style> <meta charset="utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title>LiveJournal Discovery Times</title> <meta name="viewport" content="width=device-width, initial-scale=1"> <link rel="stylesheet" type="text/css" href="lj_base.css">
+<link rel="stylesheet" type="text/css" href="discoverytimes.css">
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://stat.ljdev5.livejournal.ru/ie.css?v=1354699129" ><![endif]-->
+<link rel="stylesheet" type="text/css" href="proximanova-opentype.css">
+ <script type="text/javascript">function AdFox_SetLayerVis(spritename,state){
+   document.getElementById(spritename).style.visibility=state;
+}
+
+function AdFox_Open(AF_id){
+   AdFox_SetLayerVis('AdFox_DivBaseFlash_'+AF_id, "hidden");
+   AdFox_SetLayerVis('AdFox_DivOverFlash_'+AF_id, "visible");
+}
+
+function AdFox_Close(AF_id){
+   AdFox_SetLayerVis('AdFox_DivOverFlash_'+AF_id, "hidden");
+   AdFox_SetLayerVis('AdFox_DivBaseFlash_'+AF_id, "visible");
+}
+
+function AdFox_getCodeScript(AF_n,AF_id,AF_src){
+   var AF_doc;
+   if(AF_n<10){
+      try{
+         if(document.all && !window.opera){
+            AF_doc = window.frames['AdFox_iframe_'+AF_id].document;
+            }else if(document.getElementById){
+                     AF_doc = document.getElementById('AdFox_iframe_'+AF_id).contentDocument;
+                     }
+         }catch(e){}
+    if(AF_doc){
+       AF_doc.write('<scr'+'ipt type="text/javascript" src="'+AF_src+'"></scr'+'ipt><script type="text/javascript">setTimeout(function(){document.close();}, 10);</scr'+'ipt>');
+       }else{
+          setTimeout('AdFox_getCodeScript('+(++AF_n)+','+AF_id+',"'+AF_src+'");', 100);
+          }
+          }
+}
+
+function adfoxSdvigContent(banID, flashWidth, flashHeight){
+    var obj = document.getElementById('adfoxBanner'+banID).style;
+    if (flashWidth == '100%') obj.width = flashWidth;
+        else obj.width = flashWidth + "px";
+    if (flashHeight == '100%') obj.height = flashHeight;
+        else obj.height = flashHeight + "px";
+}
+
+function adfoxVisibilityFlash(banName, flashWidth, flashHeight){
+        var obj = document.getElementById(banName).style;
+    if (flashWidth == '100%') obj.width = flashWidth;
+        else obj.width = flashWidth + "px";
+    if (flashHeight == '100%') obj.height = flashHeight;
+        else obj.height = flashHeight + "px";
+}
+
+function adfoxStart(banID, FirShowFlNum, constVisFlashFir, sdvigContent, flash1Width, flash1Height, flash2Width, flash2Height){
+    if (FirShowFlNum == 1) adfoxVisibilityFlash('adfoxFlash1'+banID, flash1Width, flash1Height);
+        else if (FirShowFlNum == 2) {
+            adfoxVisibilityFlash('adfoxFlash2'+banID, flash2Width, flash2Height);
+            if (constVisFlashFir == 'yes') adfoxVisibilityFlash('adfoxFlash1'+banID, flash1Width, flash1Height);
+            if (sdvigContent == 'yes') adfoxSdvigContent(banID, flash2Width, flash2Height);
+                else adfoxSdvigContent(banID, flash1Width, flash1Height);
+    }
+}
+
+function adfoxOpen(banID, constVisFlashFir, sdvigContent, flash2Width, flash2Height){
+    var aEventOpenClose = new Image();
+    var obj = document.getElementById("aEventOpen"+banID);
+    if (obj) aEventOpenClose.src =  obj.title+'&rand='+Math.random()*1000000+'&prb='+Math.random()*1000000;
+    adfoxVisibilityFlash('adfoxFlash2'+banID, flash2Width, flash2Height);
+    if (constVisFlashFir != 'yes') adfoxVisibilityFlash('adfoxFlash1'+banID, 1, 1);
+    if (sdvigContent == 'yes') adfoxSdvigContent(banID, flash2Width, flash2Height);
+}
+
+
+function adfoxClose(banID, constVisFlashFir, sdvigContent, flash1Width, flash1Height){
+    var aEventOpenClose = new Image();
+    var obj = document.getElementById("aEventClose"+banID);
+    if (obj) aEventOpenClose.src =  obj.title+'&rand='+Math.random()*1000000+'&prb='+Math.random()*1000000;
+    adfoxVisibilityFlash('adfoxFlash2'+banID, 1, 1);
+    if (constVisFlashFir != 'yes') adfoxVisibilityFlash('adfoxFlash1'+banID, flash1Width, flash1Height);
+    if (sdvigContent == 'yes') adfoxSdvigContent(banID, flash1Width, flash1Height);
+}
+</script> <style type="text/css">.ljshare-container {
+    position: absolute;
+    border: 1px solid #555;
+    -moz-border-radius: 4px;
+    background-color: #fff;
+    padding: 0.1em;
+    line-height: 1.3em;
+}
+
+.ljshare-service-list li {
+    border: 1px solid #fff;
+    padding: 0.1em;
+}
+
+.ljshare-service-list li:hover {
+    background-color: #eee;
+    border: 1px solid #bbb;
+    -moz-border-radius: 2px;
+    cursor: pointer;
+}
+</style><style type="text/css">/* Contextual hover 
+------------------------------------------------------------*/
+.b-popup-contextual .i-popup-arrtl,
+.b-popup-contextual .i-popup-arrbl {
+  left: 11px;
+  }
+.b-popup-contextual .i-popup-arrtr,
+.b-popup-contextual .i-popup-arrbr {
+  right: 11px;
+  }
+.b-contextualhover {
+  width: 250px;
+  min-height: 50px;
+  margin-left: -3px;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  }
+.b-contextualhover:before,
+.b-contextualhover:after {
+  content: "";
+  display: table;
+  }
+.b-contextualhover:after {
+  clear: both;
+  }
+  .b-contextualhover,
+  .b-contextualhover DIV,
+  .b-contextualhover P,
+  .b-contextualhover UL,
+  .b-contextualhover OL,
+  .b-contextualhover LI,
+  .b-contextualhover LABEL,
+  .b-contextualhover IMG,
+  .b-contextualhover SPAN,
+  .b-contextualhover H3,
+  .b-contextualhover INPUT {
+    padding: 0;
+    margin: 0;
+    color: #000;
+    }
+  .b-contextualhover IMG {
+    border: none;
+    }
+  .b-contextualhover A:link,
+  .b-contextualhover A:visited {
+    background: #FFF;
+    border-bottom: 0 !important;
+    text-decoration: none !important;
+    color: #00C !important;
+    }
+  .b-contextualhover A:hover,
+  .b-contextualhover A:active,
+  .b-contextualhover A:focus {
+    border-bottom: 0 !important;
+    text-decoration: underline !important;
+    color: #00C !important;
+    }
+  .b-contextualhover P {
+    margin-bottom: 3px;
+    line-height: 16px;
+    font-size: 12px;
+    }
+  .b-contextualhover .input-checkbox {
+    margin-right: 2px;
+    vertical-align: middle;
+    }
+  .b-contextualhover .b-contextualhover-section {
+    overflow: hidden;
+    padding: 0 15px 0 3px;
+    }
+  .b-contextualhover .b-contextualhover-side {
+    float: right;
+    width: 60px;
+    }
+  .b-contextualhover .b-contextualhover-userpic {
+    float: right;
+    width: 60px;
+    height: 60px;
+    text-align: right;
+    }
+    .b-contextualhover .b-contextualhover-userpic A,
+    .b-contextualhover .b-contextualhover-userpic A:hover {
+      border: none !important;
+      }
+    .b-contextualhover .b-contextualhover-userpic IMG {
+      max-width: 60px;
+      max-height: 60px;
+      border: none;
+      }
+  .b-contextualhover .b-contextualhover-title {
+    padding-bottom: 5px;
+    }
+    .b-contextualhover .b-contextualhover-title H3 {
+      margin-bottom: 3px;
+      font-weight: normal;
+      font-style: normal;
+      line-height: 16px;
+      font-size: 12px;
+      }
+  .b-contextualhover .b-contextualhover-options {
+    margin: 0;
+    padding: 5px 0 2px 0;
+    border-top: 1px dotted #D3D3D3;
+    list-style: none;
+    }
+    .b-contextualhover .b-contextualhover-options LI {
+      margin-bottom: 3px;
+      line-height: 16px;
+      font-size: 12px;
+      }
+      .b-contextualhover .b-contextualhover-options LI A:hover {
+        text-decoration: underline !important;
+        }
+  .b-contextualhover .b-contextualhover-param {
+    line-height: 18px;
+    margin:0 0 6px;
+    }
+  .b-contextualhover .b-contextualhover-param-item {
+    list-style: none;
+    }
+    .b-contextualhover-param-item .b-icon-scapital {
+      margin:0 2px 0 0;
+      }
+
+.s-lanzelot .b-contextualhover A:link,
+.s-lanzelot .b-contextualhover A:visited {
+      border-bottom: 0 !important;
+      text-decoration: none !important;
+      color: #3F5F9E !important;
+      }
+.s-lanzelot .b-contextualhover A:hover,
+.s-lanzelot .b-contextualhover A:active,
+.s-lanzelot .b-contextualhover A:focus {
+      border-bottom: 0 !important;
+      text-decoration: underline !important;
+      color: #3F5F9E !important;
+      }
+.index-page .b-contextualhover A:link,
+.index-page .b-contextualhover A:visited,
+.index-page .b-contextualhover A:hover,
+.index-page .b-contextualhover A:active,
+.index-page .b-contextualhover A:focus {
+      color: #3F5F9E !important;
+      }
+.b-contextualhover .alias-unavailable A:link,
+.b-contextualhover .alias-unavailable A:visited {
+      color: #999 !important;
+      }
+.b-contextualhover .alias-unavailable A:hover,
+.b-contextualhover .alias-unavailable A:active,
+.b-contextualhover .alias-unavailable A:focus {
+      color: #999 !important;
+      }
+
+
+</style><style type="text/css">/* System Message
+----------------------------------- */
+.b-msgsystem-wrapper {
+    width: 100%;
+    height: auto;
+    }
+    .b-msgsystem-wrapper.b-msgsystem-wrapper-fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        overflow: hidden;
+        padding: 0 0 10px;
+        }
+    .s-schemius .b-msgsystem-wrapper.b-msgsystem-wrapper-fixed {
+        top: 60px;
+        }
+
+    .g-sensor .b-msgsystem-wrapper.b-msgsystem-wrapper-fixed,
+    .mobile-msg .b-msgsystem-wrapper.b-msgsystem-wrapper-fixed {
+        position: static;
+        padding: 0;
+        background-image: none;
+        }
+
+.b-msgsystem {
+    position: relative;
+    min-height: 50px;
+    padding: 10px 140px 10px 120px;
+    font: 14px/1.357 Arial, Helvetica, sans-serif;
+    }
+    .b-msgsystem DD,
+    .b-msgsystem DT,
+    .b-msgsystem TH,
+    .b-msgsystem TD,
+    .b-msgsystem P,
+    .b-msgsystem DIV,
+    .b-msgsystem LI,
+    .b-msgsystem PRE,
+    .b-msgsystem CODE,
+    .b-msgsystem KBD {
+        font-size: 100%;
+        }
+    .b-msgsystem .i-ljuser-userhead {
+        vertical-align: top !important;
+        margin: 3px 0 0 0;
+        }
+.b-msgsystem:after {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 10px;
+    background-image: -webkit-linear-gradient(top, rgba(53, 99, 161, 0.3), rgba(53, 99, 161, 0));
+    background-image:    -moz-linear-gradient(top, rgba(53, 99, 161, 0.3), rgba(53, 99, 161, 0));
+    background-image:      -o-linear-gradient(top, rgba(53, 99, 161, 0.3), rgba(53, 99, 161, 0));
+    background-image:   linear-gradient(to bottom, rgba(53, 99, 161, 0.3), rgba(53, 99, 161, 0));
+    -webkit-background-size: 10px 10px;
+         -o-background-size: 10px 10px;
+            background-size: 10px 10px;
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    }
+    .b-msgsystem-head {
+        margin: 0 0 0.357em;
+        padding: 0;
+        font-size: 1.142em;
+        font-weight: bold;
+        }
+    .b-msgsystem-wrap {
+        line-height: 50px;
+        min-height: 50px;
+        }
+
+    .b-msgsystem-head ~ .b-msgsystem-wrap {
+        line-height: inherit;
+        min-height: 0;
+        }
+
+    .b-msgsystem-body {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.571;
+        font-size: 1em;
+        color: #787878;
+        }
+
+.b-msgsystem .i-ljuser-username,
+.b-msgsystem .i-ljuser-username:link,
+.b-msgsystem .i-ljuser-username:visited {
+    color: #0051B7 !important;
+    }
+.b-msgsystem .i-ljuser-username:hover,
+.b-msgsystem .i-ljuser-username:active {
+    color: #C00 !important;
+    }
+
+.b-msgsystem-type-error {
+    background: #FFEFEF no-repeat 2.7em 50% url('data:image/png;base64,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');
+    color: #CB1427;
+    }
+    .b-msgsystem-type-error + .b-msgsystem-type-error {
+        border-top: 1px solid #FFDFDF;
+        }
+.b-msgsystem-type-warning {
+    background: #FCF8E3 no-repeat 2.7em 50% url('data:image/png;base64,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');
+    color: #C09853;
+    }
+    .b-msgsystem-type-warning + .b-msgsystem-type-warning {
+        border-top: 1px solid #F9F1C7;
+        }
+.b-msgsystem-type-success {
+    background: #DFF0D8 no-repeat 2.7em 50% url('data:image/png;base64,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');
+    color: #468847;
+    }
+    .b-msgsystem-type-success + .b-msgsystem-type-success {
+        border-top: 1px solid #BFE1B1;
+        }
+.b-msgsystem-type-info {
+    background: #D9EDF7 no-repeat 2.7em 50% url('data:image/png;base64,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');
+    color: #3A87AD;
+    }
+    .b-msgsystem-type-info + .b-msgsystem-type-info {
+        border-top: 1px solid #B3DBEF;
+        }
+
+.b-msgsystem-close {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 100px;
+    margin: -0.714em 0 0;
+    padding: 0 2em 0 0;
+    text-align: right;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    color: #000;
+    }
+.b-msgsystem-close:hover {
+    color: #C00;
+    }
+    .b-msgsystem-close-text {
+        border-bottom: 1px dotted;
+        }
+    .b-msgsystem-close-ctrl {
+        margin: 0 0 0 0.1em;
+        vertical-align: middle;
+        font-size: 1.3em;
+        }
+
+
+/* xs-size screen (45em) ~ 630px */
+@media all and (max-width: 45em) {
+    .b-msgsystem {
+        padding: 10px 50px 10px 44px;
+        background-position: 10px 10px;
+        -webkit-background-size: 24px;
+             -o-background-size: 24px;
+                background-size: 24px;
+        }
+
+    .b-msgsystem-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        width: 50px;
+        }
+        .b-msgsystem-close-text {
+            display: none;
+            }
+        .b-msgsystem-close-ctrl {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -0.6em 0 0 -0.2em;
+            text-shadow: 0 -1px 0 rgba(255, 255, 255, 0.5);
+            font-size: 1.7em;
+            color: rgba(0, 0, 0, 0.5);
+            }
+}
+
+/* Toggle */
+.b-msgsystem {
+    top: 0;
+    opacity: 1;
+    -webkit-transition: 0.3s top, 0.3s opacity;
+       -moz-transition: 0.3s top, 0.3s opacity;
+        -ms-transition: 0.3s top, 0.3s opacity;
+         -o-transition: 0.3s top, 0.3s opacity;
+            transition: 0.3s top, 0.3s opacity;
+    }
+.b-msgsystem-enter,
+.b-msgsystem-leave {
+    top: -100px;
+    opacity: 0;
+    }
+
+</style><style type="text/css">#lleo_dialog, #lleo_dialog * {
+    margin: 0 !important;
+	padding: 0 !important;
+	background: none !important;
+	border: none 0 !important;
+	position: static !important;
+	vertical-align: baseline !important;
+	font: normal 13px Arial, Helvetica !important;
+	line-height: 15px !important;
+	color: #000 !important;
+	overflow: visible !important;
+	width: auto !important;
+	height: auto !important;
+	float: none !important;
+	visibility: visible !important;
+	text-align: left !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important;
+}
+
+#lleo_dialog iframe {
+	height: 0 !important;
+	width: 0 !important;
+}
+
+#lleo_dialog {
+    position: absolute !important;
+    background: #fff !important;
+    border: solid 1px #ccc !important;
+    padding: 7px 0 0 !important;
+    left: -999px;
+    top: -999px;
+	/*max-width: 450px !important;*/
+    width: 440px !important;
+    overflow: hidden;
+    display: block !important;
+    z-index: 999999999 !important;
+    opacity: 0 !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18) !important;
+	-moz-border-radius: 3px !important;
+	-webkit-border-radius: 3px !important;
+	border-radius: 3px !important;
+}
+#lleo_dialog.lleo_show {
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s !important;
+}
+#lleo_dialog input::-webkit-input-placeholder {
+    color: #aaa !important;
+}
+#lleo_dialog .lleo_has_pic #lleo_word {
+	margin-right: 80px !important;
+}
+#lleo_dialog #lleo_translationsCopntainer1 {
+	position: relative !important;
+}
+#lleo_dialog #lleo_translationsCopntainer2 {
+	padding: 7px 0 0 !important;
+	vertical-align: middle !important;
+}
+#lleo_dialog #lleo_word {
+    color: #000 !important;
+    margin: 0 5px 2px 0 !important;
+    /*float: left !important;*/
+}
+#lleo_dialog .lleo_has_sound #lleo_word {
+    margin-left: 17px !important;
+}
+#lleo_dialog #lleo_text {
+    font-weight: bold !important;
+    color: #d56e00 !important;
+    text-decoration: none !important;
+    cursor: default !important;
+}
+#lleo_dialog #lleo_text.lleo_known {
+    cursor: pointer !important;
+    text-decoration: underline !important;
+}
+#lleo_dialog #lleo_closeBtn {
+    position: absolute !important;
+    right: 6px !important;
+    top: 5px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 0 !important;
+    color: #aaa !important;
+    display: block !important;
+    padding: 2px !important;
+	z-index: 9999999999 !important;
+	width: 7px !important;
+	height: 7px !important;
+	padding: 0  !important;
+	margin: 0   !important;
+}
+
+#lleo_dialog #lleo_optionsBtn {
+    position: absolute !important; 
+    right: 1px !important;
+    top: 12px !important;
+    line-height: 1px !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    font-size: 13px !important;
+    color: #aaa !important;
+    padding: 2px !important;
+	display: none;
+}
+#lleo_dialog #lleo_optionsBtn img{
+	width: 12px !important;
+	height: 12px !important;
+}
+#lleo_dialog #lleo_sound {
+    float: left !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin-left: 12px !important;
+    background: 0 0 no-repeat !important;
+    cursor: pointer !important;
+    display: none !important;
+}
+#lleo_dialog .lleo_has_sound #lleo_sound {
+    display: block !important;
+}
+#lleo_dialog #lleo_picOuter {
+    position: absolute !important;
+    float: right !important;
+    right: 29px;
+    top: 0;
+    display: none !important;
+    z-index: 9 !important;
+}
+#lleo_dialog .lleo_has_pic #lleo_picOuter {
+    display: block !important;
+}
+#lleo_dialog #lleo_picOuter:hover {
+    z-index: 11 !important;
+}
+#lleo_dialog #lleo_pic,
+#lleo_dialog #lleo_picBig {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    border: solid 2px #fff !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    z-index: 1 !important;
+}
+#lleo_dialog #lleo_pic {
+	position: relative !important;
+    border: none !important;
+	width: 34px !important;
+}
+#lleo_dialog #lleo_picBig {
+    box-shadow: -1px 2px 4px rgba(0,0,0,0.3);
+    z-index: 2 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+#lleo_dialog #lleo_picOuter:hover #lleo_picBig {
+    visibility: visible !important;
+    opacity: 1 !important;
+    -webkit-transition: opacity 0.3s !important;
+    -webkit-transition-delay: 0.3s !important;
+}
+#lleo_dialog #lleo_transcription {
+    color: #486D85 !important;
+    margin: 0 0 4px 29px !important;
+    color: #aaaaaa !important;
+}
+#lleo_dialog .lleo_no_trans {
+    color: #aaa !important;
+}
+
+
+
+
+
+
+#lleo_dialog .ll-translation-counter {
+	float: right !important;
+    font-size: 11px !important;
+    color: #aaa !important;
+    padding: 2px 2px 1px 10px !important;
+}
+
+#lleo_dialog .ll-translation-text {
+	float: left !important;
+	width: 80% !important;
+}
+
+#lleo_dialog #lleo_trans a {
+    color: #3F669F !important;
+    padding: 1px 4px !important;
+    text-decoration: none !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+}
+
+#lleo_dialog .ll-translation-item {
+	width: 100% !important;
+	float: left !important; 
+	padding:1px 4px;
+	color: #3F669F !important;
+	padding: 3px !important;
+	border: solid 1px white !important;
+	-moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+}
+
+#lleo_dialog .ll-translation-item:hover {
+	border: solid 1px #9FC2C9 !important;
+    background: #EDF4F6 !important;
+	cursor: pointer !important;
+}
+
+#lleo_dialog .ll-translation-marker {
+	margin: 0px 5px 2px 2px !important;
+}
+
+
+
+
+
+#lleo_dialog #lleo_icons {
+    margin: 10px 0 7px !important;
+    color: #aaa !important;
+    line-height: 20px !important;
+    font-size: 11px !important;
+    clear: both !important;
+    padding-left: 16px !important;
+}
+#lleo_icons a {
+    display: inline-block !important;
+    width: 16px !important;
+    height: 16px !important;
+    margin: 0 0 -2px 3px !important;
+    text-decoration: none !important;
+    background: 0 0 no-repeat !important;
+    opacity: 0.5 !important;
+}
+#lleo_icons a:hover {
+    opacity: 1 !important;
+}
+#lleo_icons a.lleo_google     {background-position:-34px 0 !important;}
+#lleo_icons a.lleo_multitran  {background-position:-64px 0 !important;}
+#lleo_icons a.lleo_lingvo     {background-position:-51px 0 !important; width: 12px !important;}
+#lleo_icons a.lleo_dict       {background-position:-17px 0 !important;}
+#lleo_icons a.lleo_linguee    {background-position:-81px 0 !important;}
+#lleo_icons a.lleo_michaelis  {background-position:-98px 0 !important;}
+
+
+
+
+#lleo_dialog #lleo_contextContainer {
+    margin: 0 !important;
+    padding: 3px 15px 3px 10px !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee)) !important;
+    border-bottom: solid 1px #ddd !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    display: none !important;
+    overflow: hidden !important;
+}
+#lleo_dialog .lleo_has_context #lleo_contextContainer {
+    display: block !important;
+}
+#lleo_dialog #lleo_context {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    line-height: 12px !important;
+    font-size: 11px !important;
+    margin-left: 2px !important;
+}
+#lleo_dialog #lleo_context b {
+    line-height: 12px !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    font-size: 11px !important;
+}
+#lleo_dialog #lleo_gBrand {
+    color: #aaa !important;
+    font-size: 10px !important;
+    /*padding-right: 52px !important;*/
+    padding-bottom: 14px !important;
+    margin: -3px 4px 0 4px !important;
+    background: left bottom no-repeat !important;
+    display: inline-block !important;
+    float: right !important;
+}
+#lleo_dialog #lleo_gBrand.hidden {
+    display: none !important;
+}
+#lleo_dialog #lleo_translateContextLink {
+    color: #444 !important;
+    text-shadow: 1px 1px 0 #f4f4f4 !important;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f4f4f4), to(#ddd)) !important;
+    border: solid 1px !important;
+    box-shadow: 1px 1px 0 #f6f6f6 !important;
+    border-color: #999 #aaa #aaa #999 !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    padding: 0 3px !important;
+    font-size: 11px !important;
+    text-decoration: none !important;
+    margin: 1px 5px 0 !important;
+    display: inline-block !important;
+    white-space: nowrap !important;
+}
+#lleo_dialog #lleo_translateContextLink:hover {
+    background: #f8f8f8 !important;
+}
+
+#lleo_dialog #lleo_setTransForm {
+    display: block !important;
+    margin-top: 3px !important;
+    padding-top: 5px !important;
+    /* Set position and background because the form might be overlapped by an image when no translations */
+    position: relative !important;
+    background: #fff !important;
+    z-index: 10 !important;
+    padding-bottom: 10px !important;
+    padding-left: 16px !important;
+}
+#lleo_dialog .lleo-custom-translation {
+    padding: 4px 5px !important;
+    border: solid 1px #ddd !important;
+    -moz-border-radius: 2px !important;
+	-webkit-border-radius: 2px !important;
+	border-radius: 2px !important;
+    width: 90% !important;
+    min-width: 270px !important;
+    background: -webkit-gradient(linear, 0 0, 0 20, from(#f1f1f1), to(#fff)) !important;
+	font: normal 13px Arial, Helvetica !important;
+	line-height: 15px !important;
+}
+#lleo_dialog .lleo-custom-translation:hover {
+    border: solid 1px #aaa !important;
+}
+#lleo_dialog .lleo-custom-translation:focus {
+    background: #FFFEC9 !important;
+}
+
+#lleo_dialog *.hidden {
+    display: none !important;
+}
+
+#lleo_dialog .infinitive{
+    color: #D56E00 !important;
+    text-decoration: none;
+    border-bottom: 1px dotted #D56E00 !important;
+}
+#lleo_dialog .infinitive:hover{
+    border: none !important;
+}
+
+
+#lleo_dialog #lleo_trans{
+    zoom: 1;
+    border-top: 1px solid #eeeeee !important;
+    margin: 10px 0 0 !important;
+    padding: 5px 30px 0 14px !important;
+}
+
+#lleo_dialog .lleo_clearfix {
+	display: block !important;
+	clear: both !important;
+	visibility: hidden !important;
+	height: 0 !important;
+	font-size: 0 !important;
+}
+
+#lleo_dialog #lleo_markBlock {
+    background: #eeeeee !important;
+	cursor: pointer !important; 
+	border-bottom-left-radius: 3px !important;
+	border-bottom-right-radius: 3px !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important; 
+}
+
+#lleo_dialog #lleo_markBlock img{
+	width: 14px !important;
+	height: 14px !important;
+}
+
+#lleo_dialog #lleo_markBlock .icon-cell {
+	padding: 5px 2px 5px 16px !important;
+	height: 17px !important;
+}
+
+#lleo_dialog #lleo_markBlock .wide-cell {
+	width: 100% !important;
+}
+
+#lleo_dialog #lleo_markBlock .text-cell {
+	color: #999999 !important; 
+    font: normal 13px Arial, Helvetica !important;
+    text-shadow: 0 1px #fff !important; 
+}
+
+#lleo_dialog #lleo_markBlock td {
+	vertical-align: middle !important;
+	border-collapse: separate !important;
+	border-spacing: 2px !important;
+}
+
+
+#lleo_dialog #lleo_picOuter table{
+    width: 44px !important;
+    position: absolute !important;
+    right: 0 !important;
+    vertical-align: middle !important;
+}
+
+#lleo_dialog #lleo_picOuter td{
+    width: 38px !important;
+    height: 38px !important;
+    border: 1px solid #eeeeee !important;
+    vertical-align: middle !important;
+    text-align: center !important;
+}
+
+#lleo_dialog #lleo_picOuter td div {
+	height: 38px !important;
+	overflow: hidden !important;
+}</style></head> <body ng-app="LJLive" ng-controller="LJLiveCtrl" class="ng-scope"><div class="b-popup bubble-node b-popup-contextual b-popup-noclosecontrol" style="display: none; visibility: visible; left: 0px; top: 0px;"> <div class="b-popup-outer"> <div class="b-popup-inner"><div class="b-contextualhover" style="display: block;"></div>  <i class="i-popup-arr i-popup-arrtl"><i class="i-popup-arr-brdr-outer"><i class="i-popup-arr-brdr-inner"><i class="i-popup-arr-bg"></i></i></i></i>  <i class="i-popup-close"></i> </div> </div> </div> <div class="b-discoverytimes b-discoverytimes-state-branding  b-discoverytimes-state-random" ng-class="{ &#39;b-discoverytimes-state-branding&#39;: showBranding, &#39;b-discoverytimes-state-recommend&#39;: showRecommend, &#39;b-discoverytimes-state-recommended&#39;: isRecommended, &#39;b-discoverytimes-state-random&#39;: !showRecommend }"><h1 class="b-discoverytimes-head"><a href="http://www.ljdev5.livejournal.ru/magazine" target="_blank">LiveJournal Discovery</a></h1><div class="b-discoverytimes-container"> <ul class="b-discoverytimes-items"> <!-- ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/3417.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/3417.html">Title #1</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/3797.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/3797.html">Title #2</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/3870.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/3870.html">Title #3</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/4160.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/4160.html">Title #4</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/4596.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/4596.html">Title #5</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/4795.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/4795.html">Title #6</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/5102.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/5102.html">Title #7</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/5284.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/5284.html">Title #8</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope b-discoverytimes-item-active"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/5544.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/5544.html">Title #9</a> </p> </li><!-- end ngRepeat: item in items --><li ng-repeat="item in items" ng-class="{ &#39;b-discoverytimes-item-active&#39;: active[item.post_id] }" class="b-discoverytimes-item ng-scope"> <!-- ngIf: item.user --><h3 class="b-discoverytimes-item-head ng-scope" ng-if="item.user"> <span class="ljuser         i-ljuser         i-ljuser-nopopup noctxpopup i-ljuser-type-P" ng-class="{
+        &#39;i-ljuser-deleted&#39;: user.is_invisible,
+        &#39;i-ljuser-nopopup noctxpopup&#39;: user.noctxpopup,
+        &#39;i-ljuser-withalias&#39;: user.alias,
+        &#39;i-ljuser-showalias&#39;: user.showalias
+    }" data-ljuser="lj_magazine" lj:user="lj_magazine" lj-user-dynamic="item.user.username" lj-user-dynamic-options="{ target: &#39;_blank&#39;, noctxpopup: true }"><!--
+
+    Userhead
+    --><a class="i-ljuser-profile" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><!--
+        --><img class="i-ljuser-userhead" ng-src="http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk" src="userinfo.gif"><!--
+    --></a><!--
+
+    Username
+    --><a class="i-ljuser-username" ng-href="http://www.ljdev5.livejournal.ru/magazine" ng-attr-title="{{user.alias}}" ng-attr-target="{{user.target ? user.target : &#39;_self&#39;}}" title="" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine"><b ng-bind="user.display_name" class="ng-binding">Журнал ЖЖ</b></a><!--
+
+    Alias
+    --><span class="i-ljuser-alias ng-binding" ng-bind="user.alias"></span><!--
+
+--></span> </h3><!-- end ngIf: item.user --> <p class="b-discoverytimes-item-body"> <a ng-href="http://www.ljdev5.livejournal.ru/magazine/5658.html" lj-html="item.post_subject" target="_blank" href="http://www.ljdev5.livejournal.ru/magazine/5658.html">Title #10</a> </p> </li><!-- end ngRepeat: item in items --> </ul> </div> <p class="b-discoverytimes-aside"> <a href="javascript:void(0);" class="b-discoverytimes-aside-recommend" ng-click="recommend()">Recommend this entry</a> <span class="b-discoverytimes-aside-recommended">Has been recommended</span> <a href="http://www.ljdev5.livejournal.ru/random.bml" target="_blank" class="b-discoverytimes-aside-random">Random entry</a> </p> <div class="b-discoverytimes-banner">             <script type="text/javascript">
+                Site = window.Site || {};
+                Site.ml_text = {"component.messages.close":"Close"};
+                Site.page = {"D":{},"isRecommended":false,"showRecommend":false,"items":[{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/3417.html","post_subject":"Title #1","post_id":3417},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/3797.html","post_subject":"Title #2","post_id":3797},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/3870.html","post_subject":"Title #3","post_id":3870},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/4160.html","post_subject":"Title #4","post_id":4160},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/4596.html","post_subject":"Title #5","post_id":4596},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/4795.html","post_subject":"Title #6","post_id":4795},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/5102.html","post_subject":"Title #7","post_id":5102},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/5284.html","post_subject":"Title #8","post_id":5284},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/5544.html","post_subject":"Title #9","post_id":5544},{"user":{"journal_url":"http://www.ljdev5.livejournal.ru/magazine","is_identity":false,"journaltype":"P","userhead_url":"http://www.ljdev5.livejournal.ru/img/userinfo.gif?v=17080?v=trunk","display_name":"Журнал ЖЖ","username":"lj_magazine","is_invisible":false,"noctxpopup":true,"profile_url":"http://www.ljdev5.livejournal.ru/magazine","id":"6298","display_username":"lj_magazine"},"post_url":"http://www.ljdev5.livejournal.ru/magazine/5658.html","post_subject":"Title #10","post_id":5658}]};
+                Site.page.template = {};
+                Site.page.ljlive = {"is_enabled":true};
+                Site.timer = +(new Date());
+                Site.remote = null;
+                Site.journal = null;
+                Site.entry = null;
+                (function(){
+                    var p = {"remote_is_identity":null,"remote_is_maintainer":0,"auth_token":"sessionless:1409227200:/__api/::60ea9ca8999f8b3e0d1ffa97f839527424b16c65","locale":"ru_RU","remoteUser":null,"remote_is_sup":1,"remoteJournalBase":null,"statprefix":"http://stat.ljdev5.livejournal.ru","vk_api_id":"2244375","ctx_popup":1,"jsonrpcprefix":"http://api.ljdev5.livejournal.ru","is_dev_server":1,"siteroot":"http://www.ljdev5.livejournal.ru","templates_update_time":900,"media_embed_enabled":1,"v":1354699129,"currentEntryRecommendations":0,"server_time":1409229785,"logprefix":"","counterprefix":"http://172.19.9.234:8080/ljcounter/","currentJournalBase":"","ljold":"","country":"1R","inbox_update_poll":0,"flags":{"commercial_promo_noc":true,"selfpromo_noc":true,"journal_v3":true,"new_friends_and_subscriptions":false,"ljlike_v3":true,"add_friend_page_redesign":true,"discovery":true,"homepage_v3":true,"friendsfeed_v3_settings":true,"friendsfeed_v3":true,"friendsfeed_tour":true,"regional_ratings":false},"rpc":{"public":["discovery.suggest","discovery.today","discovery.get_categories","discovery.get_feed","discovery.author_posts","discovery.get_item","homepage.get_rating","homepage.get_categories","browse.get_communities","browse.get_categories","browse.get_posts","latest.get_entries","sitemessage.get_message","comment.get_thread"]},"has_remote":0,"picsUploadDomain":"up.pics.ljdev5.livejournal.ru","remoteLocale":"ru_RU","remote_is_suspended":0,"imgprefix":"http://www.ljdev5.livejournal.ru/img","remote_can_track_threads":null,"currentJournal":"","esn_async":1,"currentEntry":"","pics_production":""}, i;
+                    for (i in p) Site[i] = p[i];
+                })();
+                Site.current_journal = {};
+                Site.version = 'trunk';
+           </script>
+<script type="text/javascript" src="ljlib.js"></script>
+<script type="text/javascript" src="iframe.js"></script>
+<!--[if gte IE 9]><script type="text/javascript" src="http://stat.ljdev5.livejournal.ru/js/ie9pinned.js?v=1354699129"></script><![endif]-->
+ <!--AdFox START-->
+<!--sup-com-->
+<!--Площадка: Livejournal.com / main / Шторка_маркетинг-->
+<!--Категория: <не задана>-->
+<!--Тип баннера: Шторка_маркетинг-->
+<!-- ________________________AdFox Asynchronous code START__________________________ -->
+<script type="text/javascript">
+<!--
+if (typeof(pr) == 'undefined') { var pr = Math.floor(Math.random() * 1000000); }
+if (typeof(document.referrer) != 'undefined') {
+  if (typeof(afReferrer) == 'undefined') {
+    afReferrer = escape(document.referrer);
+  }
+} else {
+  afReferrer = '';
+}
+var addate = new Date();
+var scrheight = '', scrwidth = '';
+if (self.screen) {
+scrwidth = screen.width;
+scrheight = screen.height;
+} else if (self.java) {
+var jkit = java.awt.Toolkit.getDefaultToolkit();
+var scrsize = jkit.getScreenSize();
+scrwidth = scrsize.width;
+scrheight = scrsize.height;
+} 
+var dl = escape(document.location);
+var pr1 = Math.floor(Math.random() * 1000000);
+document.write('<div id="AdFox_banner_'+pr1+'"></div>');
+document.write('<div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_'+pr1+'" width=1 height=1 marginwidth=0 marginheight=0 scrolling=no frameborder=0></iframe></div>');
+AdFox_getCodeScript(1,pr1,'//ads.adfox.ru/171817/prepareCode?p1=bnuwy&amp;p2=eykx&amp;pct=a&amp;pfc=a&amp;pfb=a&amp;pr=' + pr +'&amp;pt=b&amp;pd=' + addate.getDate() + '&amp;pw=' + addate.getDay() + '&amp;pv=' + addate.getHours() + '&amp;prr=' + afReferrer + '&amp;puid1=&amp;puid2=&amp;puid3=&amp;puid4=&amp;puid5=&amp;puid6=&amp;puid7=&amp;puid8=&amp;puid9=&amp;puid10=&amp;puid11=&amp;puid12=&amp;puid13=&amp;puid14=&amp;puid15=&amp;puid16=&amp;puid17=&amp;puid18=&amp;puid19=&amp;puid20=&amp;puid21=&amp;puid22=&amp;puid23=&amp;puid24=&amp;puid25=&amp;puid26=&amp;puid27=&amp;puid28=&amp;puid29=&amp;puid30=&amp;puid31=&amp;puid32=&amp;puid33=&amp;puid34=&amp;puid35=&amp;pdw=' + scrwidth + '&amp;pdh=' + scrheight + '&amp;dl='+dl+'&amp;pr1='+pr1);
+// -->
+</script><div id="AdFox_banner_845213" style="width: 300px; height: 49px;"><a href="http://ads.adfox.ru/171817/goLink?p2=eykx&p1=bnuwy&p5=cfftd&pr=cfhaung&puid1=zb0&puid2=xf8&puid3=zb0&puid4=NO&puid5=JOURNAL&puid6=bj&puid7=F&puid8=yokcel&puid9=NO&puid10=NO&puid11=login.bml&puid12=0&puid13=NO&puid14=RECENT&puid15=65l:xd9:rbw:pgo:lvo&puid16=PRESS&puid17=0&puid18=sport_inventar:sporttovar_velo:credit_users:Printers&puid19=65l:xd9:ebo:zn0:tuc&puid20=NO&puid21=1sw:65l:zg9:ws9:ds5&puid22=0&puid23=gooscifair:credit_users:sport_inventar:Printers:sporttovar_velo:auto_rubric_test&puid24=sporttovar_velo&puid25=sporttovar_velo&puid26=sporttovar_velo&puid27=sporttovar_velo" target="_blank"><img src="1005709.jpg" width="300" height="49" alt="" border="0"></a></div><div style="visibility:hidden; position:absolute;"><iframe id="AdFox_iframe_845213" width="1" height="1" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe></div>
+<!-- _________________________AdFox Asynchronous code END___________________________ -->
+ </div> </div>    <div lj-messages="" class="ng-scope"><div class="b-msgsystem-wrapper b-msgsystem-wrapper-fixed ng-hide" ng-hide="messages.length === 0">
+    <!-- ngRepeat: message in messages -->
+</div>
+</div></body></html>

@@ -1,0 +1,185 @@
+/* ---------------------------------------------------------------------------------
+   file-start: lenta/lenta_v3/lenta-calendar.css 
+*/
+
+/*
+.b-lenta-calendar-content TH,
+.b-lenta-calendar-content TD {
+	padding: 3px;
+	border: 0 solid salmon;
+	}
+	.b-lenta-calendar-content TH,
+	.b-lenta-calendar-content TABLE TBODY TD,
+	.b-lenta-calendar-content TD SPAN,
+	.b-lenta-calendar-content A {
+		font-size: 12px;
+		}
+	.b-lenta-calendar-content TH {
+		background: #E3E8ED;
+		text-shadow: 1px 1px 1px #FFF;
+		font-weight: bold;
+		color: #B9C0C4;
+		}
+		.child-1 {
+			border-radius: 5px 0 0 5px;
+			}
+		.child-7 {
+			border-radius: 0 5px 5px 0;
+			}
+	.b-lenta-calendar-content TABLE TBODY TD {
+		text-shadow: 1px 1px 1px #FFF;
+		color: #9AA0A4;
+		}
+		#page .b-lenta-calendar-content TABLE TBODY TD A {
+			display: inline;
+			margin: 0;
+			padding: 0;
+			border: 0 none;
+			text-align: center;
+			font-weight: bold;
+			}
+
+.b-lenta-calendar-content {
+	padding: 6px;
+	width: 225px;
+	border-top-width: 0;
+	-webkit-border-radius: 0 0 0 11px;
+	   -moz-border-radius: 0 0 0 11px;
+	        border-radius: 0 0 0 11px;
+	background-color: #CCD2D6;
+	text-shadow: 0px 1px 0 #FFF;
+	font: 12px/18px Arial, Helvetica, sans-serif;
+	}
+	.b-lenta-calendar-content TABLE {
+		width: 100%;
+		border-spacing: 1px;
+		border-collapse: separate;
+		}
+		.b-lenta-calendar-content TABLE CAPTION {
+			height: 2em;
+			text-align: left;
+			}
+		.b-lenta-calendar-content TABLE THEAD TH {
+			text-align: center;
+			font-weight: normal;
+			font-size: .85em;
+			}
+		.b-lenta-calendar-content TABLE TBODY TD {
+			padding: 2px 4px;
+			text-align: right;
+			font-weight: bold;
+			font-size: 1.1em;
+			}
+			.b-lenta-calendar-content TABLE TBODY TD A {
+				display: block;
+				margin: -2px -4px;
+				padding: 2px 4px;
+				border: 0;
+				text-align: right;
+				}
+		.b-lenta-calendar-content TABLE TBODY TD SPAN {
+			position: static;
+			top: auto;
+			right: auto;
+			bottom: auto;
+			left: auto;
+			display: inline;
+			float: none;
+			margin: 0;
+			padding: 0;
+			width: auto;
+			height: auto;
+			}
+		.b-lenta-calendar-content TABLE TBODY TD.other SPAN {
+			display: none;
+			}
+
+.b-lenta-calendar-content A:link,
+.b-lenta-calendar-content A:visited {
+	color: #436DAA;
+	}
+.b-lenta-calendar-content A:hover,
+.b-lenta-calendar-content A:active {
+	color: #436DAA;
+	}
+
+.sbar-cal-nav {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	line-height:17px;
+	font-size: 15px;
+	color: #000;
+	}
+	.sbar-cal-nav-month {
+		float: left;
+		}
+	.sbar-cal-nav-month.idle {
+		padding: 0 20px 0 0;
+		background: url(/img/preloader-s.gif?v=9673) no-repeat 100% 50%;
+		}
+	.sbar-cal-nav-year {
+		float: right;
+		}
+	.sbar-cal-nav-year.idle {
+		padding: 0 0 0 20px;
+		background: url(/img/preloader-s.gif?v=9673) no-repeat 0 50%;
+		}
+	#js .sbar-cal-month,
+	#js .sbar-cal-year {
+		margin: 0;
+		padding: 0 3px;
+		vertical-align: middle;
+		}
+	#js .sbar-cal-month {
+		display: inline-block;
+		min-width: 35px;
+		text-align: center;
+		}
+	.sbar-cal-nav-prev,
+	.sbar-cal-nav-next {
+		display: none;
+		}
+	#js .sbar-cal-nav-prev,
+	#js .sbar-cal-nav-next {
+		position: relative;
+		display: inline-block;
+		width: 15px;
+		height: 20px;
+		cursor: pointer;
+		vertical-align: top;
+		}
+		.sbar-cal-nav-prev .sbar-cal-nav-arr,
+		.sbar-cal-nav-next .sbar-cal-nav-arr {
+			position: absolute;
+			top: 50%;
+			display: block;
+			margin: -5px 0 0;
+			width: 0;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+			line-height: 0;
+			font: 0/0 serif;
+			}
+		.sbar-cal-nav-prev .sbar-cal-nav-arr {
+			left: 5px;
+			border-right: 6px solid #FFF;
+			}
+		.sbar-cal-nav-next .sbar-cal-nav-arr {
+			right: 5px;
+			border-left: 6px solid #FFF;
+			}
+	#js .sbar-cal-nav-prev.disabled,
+	#js .sbar-cal-nav-next.disabled {
+		cursor: default;
+		}
+		.sbar-cal-nav-prev.disabled .sbar-cal-nav-arr,
+		.sbar-cal-nav-next.disabled .sbar-cal-nav-arr {
+			opacity: 0.5;
+			-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+			filter: alpha(opacity=50);
+			}
+*/
+
+/* file-end: lenta/lenta_v3/lenta-calendar.css 
+----------------------------------------------------------------------------------*/

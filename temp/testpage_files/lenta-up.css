@@ -1,0 +1,111 @@
+/* ---------------------------------------------------------------------------------
+   file-start: lenta/lenta_v3/lenta-up.css 
+*/
+
+/* Widgets Up and New */
+.b-lenta-update {
+	position: relative;
+	height: 54px;
+	}
+.b-lenta-up,
+.b-lenta-new {
+	position: absolute;
+	top: 168px;
+	left: 0;
+	width: auto;
+	height: auto;
+	padding: 0;
+	}
+	.b-lenta-up DIV,
+	.b-lenta-new DIV {
+		width: 50px;
+		height: 24px;
+		margin: 0;
+		padding: 13px 0;
+		cursor: pointer;
+		background: #DAE3E6;
+		border-radius:  0 3px 3px 0;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+		font: normal 15px/24px Arial, Helvetica, sans-serif;
+		color: #222 !important;
+		}
+	.b-feedsettings-on .b-lenta-up DIV,
+	.b-feedsettings-on .b-lenta-new DIV {
+		background: #F7F9FA;
+		}
+.b-lenta-uparr {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	width: 14px;
+	height: 24px;
+	line-height: 1;
+    background-image: url(/air/default_theme/img/sprite.svg), none;
+    background-position: -80px -280px;
+    background-repeat: no-repeat;
+    text-indent: -9999px;  
+	}
+.b-feedsettings-on .b-lenta-uparr {
+	width: 25px;
+	height: 25px;
+	color: #7A9199;
+	background-image: none;
+	}
+	.b-feedsettings-on .b-lenta-uparr .svgicon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 25px;
+		height: 25px;
+		margin: -12px 0 0 -13px;
+		}
+
+.b-lenta-up,
+.b-lenta-new {
+	visibility: hidden;
+	opacity: 0;
+	cursor: auto;
+	-webkit-transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+	   -moz-transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+	     -o-transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+	        transition: visibility 0s linear 0.2s, opacity 0.2s linear;
+	}
+
+.b-lenta-upper .b-lenta-up,
+.b-lenta-updater .b-lenta-new {
+	z-index: 5;
+	visibility: visible;
+	opacity: 1;
+	cursor: pointer;
+	-webkit-transition-delay: 0s;
+	   -moz-transition-delay: 0s;
+	     -o-transition-delay: 0s;
+	        transition-delay: 0s;
+	}
+
+.b-lenta-updater .b-lenta-up {
+	display: none;
+	}
+
+.b-lenta-new .i-supus {
+	position: absolute;
+	top: 50%;
+	right: -9px;
+	margin-top: -11px;
+	}
+
+.logged-out .b-lenta-new,
+.logged-out .b-lenta-updater .b-lenta-new {
+	display: none;
+	}
+
+
+
+
+
+
+
+/* file-end: lenta/lenta_v3/lenta-up.css 
+----------------------------------------------------------------------------------*/

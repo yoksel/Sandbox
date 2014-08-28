@@ -1,0 +1,296 @@
+/* ---------------------------------------------------------------------------------
+   file-start: lenta/lenta_v3/lenta-widget.css 
+*/
+
+/* Lenta Widget Opening */
+
+.b-lenta-widget {
+	position: absolute;
+	z-index: 1;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	width: 0;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: width 0.1s;
+	   -moz-transition: width 0.1s;
+	     -o-transition: width 0.1s;
+	        transition: width 0.1s;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	}
+.b-lenta-widget-open {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	z-index: 3;
+	width: 240px;
+	background-color: #F7F9FA;
+	}
+	.b-lenta-widget-open .b-lenta-widget-controls {
+		left: 240px;
+		top: 10px;
+		}
+	.b-lenta-widget-open .b-lenta-widget-button-filter:before {
+		width: 16px;
+		height: 16px;
+		margin: -8px 0 0 -8px;
+		background: url(/img/icons/unit_v3.png?v=40336) no-repeat scroll 0 -113px rgba(0, 0, 0, 0);
+		}
+.b-lenta-widget-body {
+	visibility: hidden;
+	padding: 0;
+	}
+	.b-lenta-widget-open .b-lenta-widget-body {
+		visibility: visible;
+		overflow-x: hidden;
+		overflow-y: auto;
+		}
+.b-lenta-widget-title {
+	display: inline-block;
+	width: 0;
+	overflow: hidden;
+	transition: 1s;
+	}
+	.b-lenta-customize {
+		
+		}
+	.b-lenta-widget-open .b-lenta-widget-title {
+		width: 100%;
+		}
+
+/* Lenta Widget Layout */
+
+
+.b-lenta-widget-controls {
+    position: absolute;
+	}	
+.b-lenta-widget-button {
+	display: none;
+	position: absolute;
+	top: 48px;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	margin: 0;
+    padding: 0;
+	background-color: #DAE3E6;
+    border-radius: 0 3px 3px 0;
+    font: 0px/0 a;
+	}
+
+#js .b-lenta-widget-button {
+	display: block;
+	}
+
+.b-lenta-widget-button:before {
+	position: absolute;
+	left: 50%;
+    top: 50%;
+    content: " ";
+    height: 24px;
+    margin: -12px 0 0 -13px;
+    padding: 0;
+	}
+
+.b-lenta-widget-header {
+	margin: 0;
+	}
+.b-lenta-widget-header-wrap,
+.b-lenta-widget-header-wrap:link,
+.b-lenta-widget-header-wrap:visited,
+.b-lenta-widget-header-wrap:hover,
+.b-lenta-widget-header-wrap:active {
+	display: inline-block;
+	position: relative;
+	z-index: 2;
+	display: block;
+	height: 52px;
+	padding: 0 10px 0 44px;
+	background: #DAE4E6;
+	border-radius:  0 3px 3px 0;
+	color: #222;
+	}
+	.b-lenta-widget-open .b-lenta-widget-header-wrap {
+		padding-right: 10px;
+		}
+.b-lenta-widget-body {
+	position: absolute;
+	top: 0;
+	z-index: 3;
+	width: 240px;
+	max-height: 600px;
+	margin: 0;
+	}
+.b-lenta-widget-content {
+	width: 100%;
+	border-width: 0 0 1px 1px;
+	border-radius: 0 0 5px 0;
+	background: #DAE4E6;
+	}
+.b-lenta-widget-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: #F7F9FA;
+	}
+	.b-lenta-widget-item {
+		display: block;
+		padding: 17px 15px;
+		border-bottom: 1px solid #DAE3E6
+		}
+	.b-lenta-widget-item-link {
+		display: block;
+		margin: -17px -15px;
+		padding: 17px 15px;
+		}
+
+
+/* Lenta Widgets Icon
+-----------------------------------*/
+.b-lenta-widget-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 24px;
+	height: 24px;
+	background-image: url(/air/default_theme/img/sprite.png?v=40848); /* IE7-8 */
+    background-image: url(/air/default_theme/img/sprite.svg), none;  
+	background-repeat: no-repeat;
+	}
+
+/* Lenta Widgets Filter */
+
+.b-lenta-filters .b-lenta-widget-icon {
+	left: 10px;
+	right: auto;
+	background-position: 0 -280px;
+	}
+.b-lenta-filters-active .b-lenta-widget-icon {
+	background-position: 0 -280px;
+	}
+
+/* Lenta Widgets Calendar */
+.b-lenta-calendar .b-lenta-widget-icon {
+	width: 25px;
+	background-position: 0 -25px;
+	}
+
+/* Lenta Widgets Customize */
+.b-lenta-customize .b-lenta-widget-icon {
+	left: 11px;
+	right: auto;
+	width: 30px;
+	height: 30px;
+	background-position: -40px -280px;
+	}
+
+@media (max-width: 650px ){
+
+	.b-lenta-widget {
+		position: static;
+		width: 100%;
+		}
+		.b-lenta-widget-controls {
+			display: none;
+			}
+		.b-lenta-widget-body {
+			overflow-x: visible;
+			overflow-y: visible;
+			visibility: visible;
+			position: static;
+			width: 100%;
+			max-height: 100%;
+			}
+		.b-lenta-widget-list {
+			position: relative;
+        	background:
+            	linear-gradient(rgba(247,249,250,1) 30%, rgba(255,255,255,0)),
+            	linear-gradient(rgba(255,255,255,0), rgba(247,249,250,1) 70%) 0 100%,
+            	radial-gradient(farthest-side at 50% 0, rgba(0,0,0,.2), rgba(0,0,0,0)),
+            	radial-gradient(farthest-side at 50% 100%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+        	background-repeat: no-repeat;
+        	background-color: #F7F9FA;
+        	background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+        	background-attachment: local, local, scroll, scroll;
+			-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+			-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        	}
+        	.b-lenta-widget-list:after {
+        		position: absolute;
+        		right: 10px;
+    			top: 22px;
+    			width: 10px;
+    			height: 6px;
+    			margin: 0;
+    			padding: 0;
+    			content: " ";
+        		background: url(/img/icons/unit_v3.png?v=40336) no-repeat scroll 0 -99px rgba(0, 0, 0, 0);
+    			font: 0px/0 a;
+        		}
+        	.b-lenta-widget-list:hover:after {
+        		background-position: 0 -106px;
+        		}
+		.b-lenta-widget-item {
+			border-bottom: 1px solid #DAE3E6;
+			display: none;
+			}
+		.b-lenta-filter-active {
+			display: block;
+			
+			}
+		.b-lenta-widget-body:hover .b-lenta-widget-item {
+			display: block;
+			}
+	.b-lenta-filters {
+        width: 100%;
+        }
+        .b-lenta-filters .b-lenta-widget-header {
+			display: none;
+			}
+	    .b-lenta-sidebar-section .b-lenta-widget-body {
+	        visibility: visible;
+	        height: 25px;
+	        overflow: hidden;
+	        border: 2px solid #B5C0C9;
+	        border-width: 2px 0;
+	        }
+	        .b-lenta-sidebar-section .b-lenta-widget-body:hover {
+		        height: 100%;
+		        }
+	.b-lenta-customize {
+		position: absolute;
+		top: 47px;
+		right: 30px;
+		}
+		.b-lenta-customize .b-lenta-widget-header,
+		.b-lenta-widget-header-wrap, 
+		.b-lenta-widget-header-wrap:link, 
+		.b-lenta-widget-header-wrap:visited, 
+		.b-lenta-widget-header-wrap:hover, 
+		.b-lenta-widget-header-wrap:active {
+			float: right;
+			padding: 0 0 0 44px;
+			background: transparent;
+			outline: none;
+			}
+		.b-lenta-customize .b-lenta-widget-body,
+		.b-lenta-customize .b-lenta-widget-title {
+			display: none;
+			}		
+		.b-lenta-widget-open {
+			border: none;
+			background: transparent;
+			}
+
+		    
+}    	
+
+
+/* file-end: lenta/lenta_v3/lenta-widget.css 
+----------------------------------------------------------------------------------*/

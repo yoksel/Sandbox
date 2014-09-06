@@ -1,3 +1,9 @@
+@charset "windows-1251";
+
 BODY {
     background: gold;
+}
+
+BODY:before {
+    content: "kdsWCWCU OIJOVICUYIUBO";
 }

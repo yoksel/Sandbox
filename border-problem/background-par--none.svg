@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1920 78"
+    preserveAspectRatio="none">
+  <rect width="100%" height="100%" fill="violet"/>
+  <path fill="green" d="M0 76L1920 0 0 0z"/>
+</svg>

@@ -1,0 +1,101 @@
+body
+{
+    font-family: Georgia;
+
+    padding: 30px 10px;
+
+    text-align: center;
+
+    background: white;
+}
+img
+{
+    display: inline-block;
+
+    margin: 5px;
+}
+
+h1,
+h2,
+h3
+{
+    font-weight: normal;
+}
+
+h2
+{
+    font-size: 1.2rem;
+}
+
+ul
+{
+    display: flex;
+    flex-direction: column;
+
+    list-style-type: none;
+
+    outline: 1px solid #ddd;
+
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+li
+{
+    display: flex;
+
+    align-items: center;
+}
+
+code {
+    display: inline-block;
+    padding: .5em;
+    border-radius: 5px;
+    background: lemonchiffon;
+}
+
+.desc {
+    order: 2;
+    text-align: left;
+}
+
+svg
+{
+    width: 100px;
+    height: 100px;
+    margin: 1rem;
+
+    outline: 1px solid #ddd;
+}
+
+.circle
+{
+    /*fill: pink;*/
+    stroke-width: 5;
+    stroke: gold;
+    color: red;
+}
+
+.external-filled-circle
+{
+    stroke: royalblue;
+}
+
+.external-copy-filled-circle
+{
+    stroke: indigo;
+    stroke-width: 7;
+}
+
+.css-filled-circle
+{
+    fill: url(../test/#grad);
+    stroke: orangered;
+}
+
+.css-external-filled-circle
+{
+    fill: url(../svg-with-grads.svg#grad--external);
+    stroke: crimson;
+}

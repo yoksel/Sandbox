@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="4in" height="1in">
+    <linearGradient id="grad--external">
+        <stop stop-color="gold" offset="0%"></stop>
+        <stop stop-color="teal" offset="30%"></stop>
+        <stop stop-color="indigo" offset="60%"></stop>
+        <stop stop-color="crimson" offset="100%"></stop>
+    </linearGradient>
+
+</svg>

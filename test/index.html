@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="top-level-styles.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../top-level-styles.css">
   <title>Test page</title>
+  <base href="/test/">
 
 </head>
 <body>
 
-<h1>Test links to gradients</h1>
+<h1>Test links to gradients (inner page)</h1>
 <ul>
   <li>
 
@@ -21,13 +22,13 @@
 
     <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     xml:base="http://localhost:3000/">
+     xml:base="http://localhost:3000/test/">
 
       <linearGradient id="grad">
-        <stop stop-color="gold" offset="0%"></stop>
-        <stop stop-color="teal" offset="30%"></stop>
-        <stop stop-color="indigo" offset="60%"></stop>
-        <stop stop-color="crimson" offset="100%"></stop>
+        <stop stop-color="red" offset="0%"></stop>
+        <stop stop-color="gold" offset="30%"></stop>
+        <stop stop-color="orange" offset="60%"></stop>
+        <stop stop-color="steelblue" offset="100%"></stop>
       </linearGradient>
 
       <symbol id="shape">
@@ -48,12 +49,12 @@
 
     <div class="desc">
       <h2>Fill via external CSS (in ./css)</h2>
-      <code>fill: url(#grad);</code>
+      <code>fill: url(../#grad);</code>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     xml:base="http://localhost:3000/">
+     xml:base="http://localhost:3000/test/">
       <use xlink:href="#shape"
          class="circle css-filled-circle"/>
     </svg>
@@ -62,13 +63,13 @@
   <li>
 
     <div class="desc">
-      <h2>Fill via external CSS (in the same level as document)</h2>
+      <h2>Fill via external CSS (in the top level)</h2>
       <code>fill: url(../#grad);</code>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     xml:base="http://localhost:3000/">
+     xml:base="http://localhost:3000/test/">
       <use xlink:href="#shape"
          class="circle css-filled-circle-2"/>
     </svg>
@@ -82,7 +83,7 @@
 
     <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     xml:base="http://localhost:3000/">
+     xml:base="http://localhost:3000/test/">
       <use xlink:href="#shape"
          class="circle css-external-filled-circle"/>
     </svg>
@@ -91,12 +92,12 @@
 
     <div class="desc">
       <h2>Fill with external gradient</h2>
-      <code>fill="url(../img/svg-with-grads.svg#grad--external)"/></code>
+      <code>fill="url(../svg-with-grads.svg#grad--external)"</code>
     </div>
 
     <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink"
-     xml:base="http://localhost:3000/">
+     xml:base="http://localhost:3000/test/">
       <use xlink:href="#shape"
          class="circle external-filled-circle"
          fill="url(../svg-with-grads.svg#grad--external)"/>

@@ -12,18 +12,26 @@
     .item {
       display: inline-flex;
       flex-direction: column;
-      outline: 1px solid;
+      margin: .5rem;
+      padding: .5rem;
+      outline: 1px solid tan;
       background: palegoldenrod;
     }
 
+    .item H2 {
+      margin: 0 0 .5em;
+      font-weight: normal;
+    }
+
     .item H2::before {
-      content: counter(items) . '.';
+      content: counter(items)'. ';
       counter-increment: items;
     }
 
-    IMG {
+    .item IMG {
       width: 125px;
       height: 125px;
+      margin-bottom: 1rem;
     }
 
     .masked {
@@ -42,51 +50,29 @@
       background: darkmagenta;
     }
 
-    .masked--src-with-layer {
-      -webkit-mask-image: url(./img/tiles/tile-src-with-layer.png);
-      mask-image: url(./img/tiles/tile-src-with-layer.png);
-      background: mediumvioletred;
-    }
-
-    .masked--src-png8 {
-      -webkit-mask-image: url(./img/tiles/tile-src-png8.png);
-      mask-image: url(./img/tiles/tile-src-png8.png);
-      background: deeppink;
-    }
-
-    .masked--src-png24 {
-      -webkit-mask-image: url(./img/tiles/tile-src-png24.png);
-      mask-image: url(./img/tiles/tile-src-png24.png);
-      background: hotpink;
-    }
-
-    .masked--src-png24-srgb {
-      -webkit-mask-image: url(./img/tiles/tile-src-png24-srgb.png);
-      mask-image: url(./img/tiles/tile-src-png24-srgb.png);
-      background: salmon;
-    }
-
     .masked--bw {
       -webkit-mask-image: url(./img/tiles/tile-bw.png);
       mask-image: url(./img/tiles/tile-bw.png);
-      mask-mode: luminance;
-      background: darkorange;
+      background: orangered;
     }
+
     .masked--bw-inverse {
       -webkit-mask-image: url(./img/tiles/tile-bw-inverse.png);
       mask-image: url(./img/tiles/tile-bw-inverse.png);
       mask-mode: luminance;
-      background: gold;
+      background: yellowgreen;
     }
+
     .masked--transparent-black {
       -webkit-mask-image: url(./img/tiles/tile-transparent-black.png);
       mask-image: url(./img/tiles/tile-transparent-black.png);
-      background: yellowgreen;
+      background: forestgreen;
     }
+
     .masked--transparent-white {
       -webkit-mask-image: url(./img/tiles/tile-transparent-white.png);
       mask-image: url(./img/tiles/tile-transparent-white.png);
-      background: forestgreen;
+      background: steelblue;
     }
 
     .masked--transparent-half {
@@ -109,33 +95,15 @@
 </div>
 
 <div class="item">
-  <h2>src-with-layer</h2>
-  <img src="./img/tiles/tile-src-with-layer.png" alt="">
-  <div class="masked masked--src-with-layer"></div>
-</div>
-
-<div class="item">
-  <h2>src-png8</h2>
-  <img src="./img/tiles/tile-src-png8.png" alt="">
-  <div class="masked masked--src-png8"></div>
-</div>
-
-<div class="item">
-  <h2>src-png24</h2>
-  <img src="./img/tiles/tile-src-png24.png" alt="">
-  <div class="masked masked--src-png24"></div>
-</div>
-
-<div class="item">
-  <h2>src-png24-srgb</h2>
-  <img src="./img/tiles/tile-src-png24-srgb.png" alt="">
-  <div class="masked masked--src-png24-srgb"></div>
+  <h2>bw</h2>
+  <img src="./img/tiles/tile-bw.png" alt="">
+  <div class="masked masked--bw"></div>
 </div>
 
 <div class="item">
   <h2>bw + lumi</h2>
   <img src="./img/tiles/tile-bw.png" alt="">
-  <div class="masked masked--bw"></div>
+  <div class="masked  masked--lumi masked--bw"></div>
 </div>
 
 <div class="item">

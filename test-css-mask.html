@@ -1,82 +1,97 @@
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
   <title>Test CSS Masks</title>
 
   <style type="text/css">
-    .masked {
-      width: 125px;
-      height: 125px;
-      display: inline-flex;
-      mask-size: 100% 100%;
+    BODY {
+      counter-reset: items;
     }
 
     .item {
       display: inline-flex;
       flex-direction: column;
       outline: 1px solid;
-      background: aqua;
+      background: palegoldenrod;
+    }
 
-      IMG {
-        width: 125px;
-        height: 125px;
-      }
+    .item H2::before {
+      content: counter(items) . '.';
+      counter-increment: items;
+    }
+
+    IMG {
+      width: 125px;
+      height: 125px;
+    }
+
+    .masked {
+      width: 125px;
+      height: 125px;
+      display: inline-flex;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
     }
 
     .masked--src {
+      /*-webkit-mask-image: url(https://img-fotki.yandex.ru/get/9492/5091629.9d/0_80e74_9f303e3d_M.png);*/
       /*mask-image: url(https://img-fotki.yandex.ru/get/9492/5091629.9d/0_80e74_9f303e3d_M.png);*/
+      -webkit-mask-image: url(./img/tiles/tile-src.png);
       mask-image: url(./img/tiles/tile-src.png);
-      mask-mode: luminance;
-      background: yellow;
+      background: darkmagenta;
     }
 
     .masked--src-with-layer {
+      -webkit-mask-image: url(./img/tiles/tile-src-with-layer.png);
       mask-image: url(./img/tiles/tile-src-with-layer.png);
-      mask-mode: luminance;
-      background: yellowgreen;
+      background: mediumvioletred;
     }
 
     .masked--src-png8 {
+      -webkit-mask-image: url(./img/tiles/tile-src-png8.png);
       mask-image: url(./img/tiles/tile-src-png8.png);
-      mask-mode: luminance;
-      background: pink;
+      background: deeppink;
     }
 
     .masked--src-png24 {
+      -webkit-mask-image: url(./img/tiles/tile-src-png24.png);
       mask-image: url(./img/tiles/tile-src-png24.png);
-      mask-mode: luminance;
-      background: teal;
+      background: hotpink;
     }
 
     .masked--src-png24-srgb {
+      -webkit-mask-image: url(./img/tiles/tile-src-png24-srgb.png);
       mask-image: url(./img/tiles/tile-src-png24-srgb.png);
-      mask-mode: luminance;
-      background: blue;
+      background: salmon;
     }
 
     .masked--bw {
+      -webkit-mask-image: url(./img/tiles/tile-bw.png);
       mask-image: url(./img/tiles/tile-bw.png);
+      mask-mode: luminance;
+      background: darkorange;
+    }
+    .masked--bw-inverse {
+      -webkit-mask-image: url(./img/tiles/tile-bw-inverse.png);
+      mask-image: url(./img/tiles/tile-bw-inverse.png);
       mask-mode: luminance;
       background: gold;
     }
-    .masked--bw-inverse {
-      mask-image: url(./img/tiles/tile-bw-inverse.png);
-      mask-mode: luminance;
-      background: orange;
-    }
     .masked--transparent-black {
+      -webkit-mask-image: url(./img/tiles/tile-transparent-black.png);
       mask-image: url(./img/tiles/tile-transparent-black.png);
-      background: crimson;
-      mask-mode: alpha;
+      background: yellowgreen;
     }
     .masked--transparent-white {
-      mask-image: url(../img/tiles/tile-transparent-white.png);
-      background: teal;
-      // mask-mode: alpha;
+      -webkit-mask-image: url(./img/tiles/tile-transparent-white.png);
+      mask-image: url(./img/tiles/tile-transparent-white.png);
+      background: forestgreen;
     }
 
     .masked--transparent-half {
-      mask-image: url(../img/tiles/tile-transparent-half-png8.png);
+      -webkit-mask-image: url(./img/tiles/tile-transparent-half-png8.png);
+      mask-image: url(./img/tiles/tile-transparent-half-png8.png);
       background: teal;
     }
 
@@ -87,63 +102,71 @@
 </head>
 <body>
 
-  <div style="background: hotpink">
-
-
-
-
-</div>
-
-
-<div class="item">0, src
+<div class="item">
+  <h2>src</h2>
   <img src="./img/tiles/tile-src.png" alt="">
   <div class="masked masked--src"></div>
 </div>
 
-<div class="item">0, src
+<div class="item">
+  <h2>src-with-layer</h2>
   <img src="./img/tiles/tile-src-with-layer.png" alt="">
   <div class="masked masked--src-with-layer"></div>
 </div>
 
-<div class="item">0, src
+<div class="item">
+  <h2>src-png8</h2>
   <img src="./img/tiles/tile-src-png8.png" alt="">
   <div class="masked masked--src-png8"></div>
 </div>
 
-<div class="item">0, src
+<div class="item">
+  <h2>src-png24</h2>
   <img src="./img/tiles/tile-src-png24.png" alt="">
   <div class="masked masked--src-png24"></div>
 </div>
 
-<div class="item">0, src
+<div class="item">
+  <h2>src-png24-srgb</h2>
   <img src="./img/tiles/tile-src-png24-srgb.png" alt="">
   <div class="masked masked--src-png24-srgb"></div>
 </div>
 
-<div class="item">1, bw
+<div class="item">
+  <h2>bw + lumi</h2>
   <img src="./img/tiles/tile-bw.png" alt="">
   <div class="masked masked--bw"></div>
 </div>
-<div class="item">2, bw-inverse
+
+<div class="item">
+  <h2>bw-inverse + lumi</h2>
   <img src="./img/tiles/tile-bw-inverse.png" alt="">
   <div class="masked masked--bw-inverse"></div>
 </div>
-<div class="item">3
+
+<div class="item">
+  <h2>transp-black</h2>
   <img src="./img/tiles/tile-transparent-black.png" alt="">
   <div class="masked masked--transparent-black"></div>
 </div>
-<div class="item">4
-   <img src="./img/tiles/tile-transparent-white.png" alt="">
+
+<div class="item">
+  <h2>transp-white</h2>
+  <img src="./img/tiles/tile-transparent-white.png" alt="">
   <div class="masked masked--transparent-white"></div>
 </div>
-<div class="item">5
-   <img src="./img/tiles/tile-transparent-half-png8.png" alt="">
+
+<div class="item">
+  <h2>transp-half-png8</h2>
+  <img src="./img/tiles/tile-transparent-half-png8.png" alt="">
   <div class="masked masked--transparent-half"></div>
 </div>
 
-<div class="item">5
-   <img src="./img/tiles/tile-transparent-half-png8.png" alt="">
+<div class="item">
+  <h2>transp-half-png8 + lumi</h2>
+  <img src="./img/tiles/tile-transparent-half-png8.png" alt="">
   <div class="masked masked--lumi masked--transparent-half"></div>
 </div>
+
 </body>
 </html>

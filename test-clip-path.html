@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style type="text/css">
+    BODY {
+      padding: 1rem;
+    }
+
+    .svg-defs {
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+
+    .img-poly-text {
+      width: 200px;
+      height: 200px;
+      -webkit-clip-path: url(#clipping-poly-with-text);
+      clip-path: url(#clipping-poly-with-text);
+      }
+
+    .img-doubled-poly {
+      width: 200px;
+      height: 200px;
+      -webkit-clip-path: url(#clipping-doubled-poly);
+      clip-path: url(#clipping-doubled-poly);
+      }
+
+    .img-single-poly {
+      width: 200px;
+      height: 200px;
+      -webkit-clip-path: url(#clipping-poly);
+      clip-path: url(#clipping-poly);
+      }
+
+      figure {
+        max-width: 200px;
+      }
+
+      figcaption {
+        text-align: center;
+        background: #DDD;
+      }
+
+  </style>
+</head>
+<body>
+  <svg class="svg-defs">
+    <clipPath id="clipping-poly-with-text">
+      <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185"/>
+      <text x="0" y="3.2em">Text</text>
+    </clipPath>
+
+    <clipPath id="clipping-doubled-poly">
+      <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185"/>
+      <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185"/>
+    </clipPath>
+
+    <clipPath id="clipping-poly">
+      <polygon points="98 153 38 185 49 118 1 70 68 61 98 1 128 61 195 70 147 118 158 185"/>
+    </clipPath>
+  </svg>
+
+  <p>Open this page in Safari & try to resize the window</p>
+
+  <figure>
+    <img
+    class="img-poly-text"
+    src="img/demo/pepers.jpeg" alt="" />
+
+    <figcaption>Polygon with text</figcaption>
+  </figure>
+
+  <figure>
+    <img
+    class="img-doubled-poly"
+    src="img/demo/pepers.jpeg" alt="" />
+
+    <figcaption>Two polygons</figcaption>
+  </figure>
+
+  <figure>
+    <img
+    class="img-single-poly"
+    src="img/demo/pepers.jpeg" alt="" />
+
+    <figcaption>Single polygon</figcaption>
+  </figure>
+</body>
+</html>

@@ -14,7 +14,7 @@ class BenchMark {
     this.funcRepeat = funcRepeat;
     this.benchRepeat = benchRepeat;
     this.resultContainer = resultContainer;
-    this.setStatus('Результаты появятся здесь');
+    this.setStatus('Результаты появятся здесь.<br> Во время выполнения тестов страница может какое-то время<br>не реагировать на действия пользователя.');
 
     this.results = this.prepareResults();
   }
@@ -84,15 +84,15 @@ const benchmark = new BenchMark({
   funcsList: [
     {
       func: nodesToContainerOnPage,
-      desc: 'Ноды строк пишутся в контейнер на странице сразу в момент создания'
+      desc: 'Ноды строк пишутся в&nbsp;контейнер на&nbsp;странице сразу в&nbsp;момент создания'
     },
     {
       func: htmlToWrapper,
-      desc: 'Из массива данных генерится строчный HTML, который потом заменяет содержимое контейнера на странице'
+      desc: 'Из массива данных генерится строчный HTML, который потом заменяет содержимое контейнера на&nbsp;странице'
     },
     {
       func: nodesToNewContainer,
-      desc: 'Ноды строк пишутся в новый элемент, а потом oн заменяет контейнер на странице'
+      desc: 'Ноды строк пишутся в&nbsp;новый элемент, а&nbsp;потом&nbsp;oн заменяет контейнер на&nbsp;странице'
     },
   ],
   funcRepeat: 1000,

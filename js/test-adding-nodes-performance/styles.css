@@ -15,6 +15,10 @@ H2 {
   color: #555;
 }
 
+H3 {
+  margin-bottom: .25em;
+}
+
 .page {
   max-width: 1000px;
   margin: 2rem auto;
@@ -42,7 +46,6 @@ H2 {
 .result .result__status {
   color: #999;
   font-style: italic;
-  text-align: center;
 }
 
 .run-benchmark {

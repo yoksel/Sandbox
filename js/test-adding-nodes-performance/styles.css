@@ -1,0 +1,77 @@
+BODY {
+  font: 16px/1.5 Trebuchet MS, Arial, sans-serif;
+}
+
+H1, H2, H3 {
+  margin: 0 0 .5em;
+}
+
+H1 {
+  color: #999;
+  margin-bottom: 1em;
+}
+
+H2 {
+  color: #555;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.section + .section {
+  margin-top: 2rem
+}
+
+.result {
+  border: 1px solid #DDD;
+}
+
+.result TH,
+.result TD {
+  text-align: left;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid #DDD;
+}
+
+.result TR:last-child TD {
+  border-bottom: none;
+}
+
+.result .result__status {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+}
+
+.run-benchmark {
+  margin-top: 1rem;
+  border: none;
+  background: #000;
+  color: #FFF;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.run-benchmark:disabled {
+  opacity: .75;
+  cursor: not-allowed;
+}
+
+.wrapper {}
+
+.container {
+  border: 1px solid #DDD;
+}
+
+.container__row {
+  display: flex;
+  border-bottom: 1px solid #DDD;
+}
+
+.container__cell {
+  padding: .5rem 1rem;
+}

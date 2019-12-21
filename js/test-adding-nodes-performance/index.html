@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Test adding nodes performance</title>
+  <script defer src="./script.js" type="module"></script>
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+  <div class="page">
+
+    <h1>Сравнение производительности разных способов генерации и&nbsp;вставки HTML на&nbsp;страницу</h1>
+
+    <section class="section">
+      <h2>Результаты измерений</h2>
+
+      <table class="result">
+        <thead class="result__thead">
+          <tr>
+            <th>Функция</th>
+            <th>Время выполнения</th>
+          </tr>
+        </thead>
+
+        <tbody class="result__tbody">
+
+        </tbody>
+      </table>
+
+      <button type="button" class="run-benchmark">Запустить тесты</button>
+    </section>
+
+    <section class="section">
+      <h2>Контейнер для тестовой отрисовки</h2>
+
+      <div class="wrapper">
+        <div class="container"></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>

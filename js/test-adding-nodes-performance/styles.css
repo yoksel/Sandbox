@@ -61,7 +61,7 @@ H3 {
 }
 
 .run-benchmark:disabled {
-  opacity: .75;
+  opacity: .5;
   cursor: not-allowed;
 }
 

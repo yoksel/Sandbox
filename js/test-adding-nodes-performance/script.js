@@ -20,6 +20,10 @@ const benchmark = new Benchmark({
       func: nodesToNewContainer,
       desc: 'Ноды строк пишутся в&nbsp;новый элемент, а&nbsp;потом&nbsp;oн заменяет контейнер на&nbsp;странице'
     },
+    {
+      func: nodesListToContainer,
+      desc: 'Ноды строк пишутся в массив, а потом весь массив вставляется с помощью append() в контейнер на&nbsp;странице'
+    },
   ],
   funcRepeat: 1000,
   benchRepeat: 20
@@ -87,6 +91,35 @@ function nodesToNewContainer() {
 
   wrapper.innerHTML = '';
   wrapper.append(container);
+}
+
+// Строки пишутся в массив, а потом весь массив
+// вставляется с помощью append
+function nodesListToContainer() {
+  const container = document.querySelector('.container');
+  const nodesList = [];
+
+  data.forEach(row => {
+    const rowElem = document.createElement('div');
+    rowElem.classList.add('container__row');
+
+    for(let cell of Object.values(row)) {
+      if(typeof cell === 'object') {
+        continue;
+      }
+
+      const cellElem = document.createElement('div');
+      cellElem.classList.add('container__cell');
+      cellElem.innerHTML = cell;
+
+      rowElem.append(cellElem);
+    }
+
+    nodesList.push(rowElem);
+  })
+
+  container.innerHTML = '';
+  container.append(...nodesList);
 }
 
 // HTML собирается в строку, а потом заменяет содержимое container

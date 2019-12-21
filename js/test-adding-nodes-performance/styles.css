@@ -30,6 +30,7 @@ H3 {
 
 .result {
   border: 1px solid #DDD;
+  border-collapse: collapse;
 }
 
 .result TH,

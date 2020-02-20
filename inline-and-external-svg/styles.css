@@ -1,0 +1,86 @@
+.hidden {
+  display: none;
+}
+
+BODY {
+  font: 16px/1.5 Trebuchet MS, Arial, sans-serif;
+}
+
+UL {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.demos {
+  color: yellowgreen;
+}
+
+.demo-currentColor {
+  background: yellowgreen;
+}
+
+LI {
+  margin-bottom: 2rem;
+}
+
+A {
+  color: orange;
+}
+
+.demo-link {
+  background: orange;
+}
+
+A:hover {
+  color: steelblue;
+}
+
+H2, H3 {
+  color: #000;
+}
+
+svg {
+  flex-shrink: 0;
+  width: 180px;
+  height: 150px;
+  margin-right: 2rem;
+  outline: 1px solid #DDD;
+  fill: gold;
+}
+
+.demo-base-svg {
+  background: gold;
+}
+
+.colored-svg {
+  color: turquoise;
+}
+
+.demo-colored-svg {
+  background: turquoise;
+}
+
+.colored-group {
+  color: pink
+}
+
+.demo-colored-group {
+  background: pink
+}
+
+.palette SPAN {
+  padding: .5rem 1rem;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+H1 {
+  margin: 0 0 1em;
+  padding: 1em 0;
+  border-bottom: 1px solid #DDD;
+  text-align: center;
+}
